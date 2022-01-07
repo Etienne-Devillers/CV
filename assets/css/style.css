@@ -112,6 +112,7 @@ body {
 
     .navbar {
         background-color: #FFF;
+        opacity: 1;
     }
 
     .hamburger {
@@ -144,6 +145,7 @@ body {
 
 /* -------------------- Fin de section Navbar */
 
+
 /* -------------------- Section Background image */
 #containerBackground {}
 
@@ -158,6 +160,10 @@ body {
 
 }
 
+.title {
+    font-size: 2em;
+}
+/* -------------------- Fin Section Background image */
 .personnalInformations {
     height: 20vh;
 }
@@ -232,6 +238,92 @@ body {
 }
 
 
+
+
+
+
+
+
+.tool{
+    height: 150px;
+
+}
+
+
+.toolList li {
+    padding: 3em 1em;
+}
+
+
+
+
+
+
+
+
+#polygonTop2 {
+    clip-path: polygon(100% 50%, 0 0, 100% 0);
+    height: 20vh;
+    width: 100vw;
+    background-color: white;
+    position: absolute;
+    z-index: -1;
+}
+
+#polygonBottom2 {
+    clip-path: polygon(50% 75%, 0% 25%, 100% 100%, 0 100%, 0 25%);
+    height: 20vh;
+    width: 100vw;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
+.backgroundImgFloating2 {
+    background: url(../img/brownBackground.jpg);
+    width: 100vw;
+    min-height: 40vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+
+/* 
+#polygonTop3 {
+    clip-path: polygon(50% 0, 0 50%, 100% 50%);
+    height: 20vh;
+    width: 100vw;
+    background-color: gray;
+    position: absolute;
+    top: -10vh;
+    z-index: -1;
+}
+
+#polygonBottom3 {
+    clip-path: polygon(50% 50%, 0 0%, 100% 0%);
+    height: 20vh;
+    width: 100vw;
+    background-color: grey;
+    position: absolute;
+    bottom: -19.9vh;
+    z-index: -1;
+
+} */
+
+.backgroundImgFloating3 {
+    background-color: grey;
+    clip-path: polygon(50% 0, 100% 15%, 100% 85%, 50% 100%, 0 85%, 0 15%);
+    width: 100vw;
+    min-height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    margin-top: 15vh;
+}
 
 
 
