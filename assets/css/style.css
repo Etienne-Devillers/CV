@@ -20,6 +20,41 @@ body {
     height: 2000px;
 }
 
+.scrollingMouse {
+    
+    width: 40px;
+    height: 70px;
+    border: solid 2px #fff;
+    border-radius: 50px;
+    position: relative;
+    margin-top: 10em;
+    margin-left: calc(50% - 35px);
+}
+
+.scrollingMouse:after {
+    position: absolute;
+    height: 20px;
+    width: 10px;
+    background-color: white;
+    content: '';
+    left: calc(50% - 5px);
+    border-radius: 10px;
+    animation: mouse 1.5s infinite;
+
+}
+
+@keyframes mouse {
+    0% {
+        opacity: 1;
+        top: 10px;
+    }
+
+    100% {
+        opacity: 0;
+        top: 40px;
+    }
+}
+
 /*--------------------  Section Navbar */
 
 .bar {
@@ -43,6 +78,7 @@ body {
     width: 100%;
     z-index: 2;
     margin: 0;
+    box-shadow: 0 0 4px rgb(0 0 0 / 20%);
 }
 
 .nav-menu {
@@ -152,7 +188,7 @@ body {
 #imageBackground {
     background: url(../img/office-gb104c0836_1920.jpg);
     min-width: 100vw;
-    height: 80vh;
+    height: 85vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0% 70%;
@@ -161,11 +197,18 @@ body {
 }
 
 .title {
-    font-size: 2em;
+    font-size: 3em;
+    padding-top: 4em;
 }
+
+.titleJob {
+    font-size: 6em;
+}
+
 /* -------------------- Fin Section Background image */
 .personnalInformations {
-    height: 20vh;
+    height: 15vh;
+    box-shadow: 0 0 4px rgb(0 0 0 / 20%);
 }
 
 .test {
@@ -217,7 +260,7 @@ body {
 .backgroundImgFloating {
     background: url(../img/brownBackground.jpg);
     width: 100vw;
-    min-height: 70vh;
+    min-height: 90vh;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -229,6 +272,7 @@ body {
 
 .picto {
     width: 40px;
+    height: 40px;
 }
 
 .quality {
@@ -238,13 +282,59 @@ body {
 }
 
 
+.skillPoint {
+    height: 12px;
+    min-width: 30px;
+
+    margin-left: 5px;
+    border: solid 1px;
+}
+
+.htmlSkillOn {
+    background: #FF7D1B;
+}
+
+.htmlSkillOff {
+    background: gray;
+}
+
+.cssSkillOn {
+    background: #3399FF;
+}
+
+.cssSkillOff {
+    background: gray;
+}
+
+.jsSkillOn {
+    background: #F9D438;
+}
+
+.jsSkillOff {
+    background: gray;
+}
+
+.phpSkillOn {
+    background: #6684B6;
+}
+
+.phpSkillOff {
+    background: gray;
+}
+
+.sqlSkillOn {
+    background: #E48E00;
+}
+
+.sqlSkillOff {
+    background: gray;
+}
 
 
 
 
 
-
-.tool{
+.tool {
     height: 150px;
 
 }

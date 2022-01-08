@@ -44,8 +44,12 @@
     <!-- Section Accueil -->
     <div id="containerBackground">
         <div id="imageBackground">
-            <h1 class="title text-center pt-7 text-white ">Bonjour, je m'apelle <br>Etienne Devillers  </h1><br>
-            <h1 class="title text-center text-white " >Web Developer Junior</h1>
+            <h1 class="title text-center  text-white ">Bonjour, je m'apelle <br>Etienne Devillers </h1><br>
+            <h1 class="titleJob text-center text-white  ">Web Developer Junior</h1>
+            <div class="scrollingMouse">
+        </div>
+       
+
         </div>
     </div>
 
@@ -66,18 +70,53 @@
     <section class="profil1">
 
         <!--  partie à propos -->
-        <div class="container-fluid bg-primary h-100 ">
+        <div class="container-fluid  h-100 ">
             <div class="row  ">
                 <div class="d-none d-sm-block col-sm-3 col-md-2 offset-sm-3 offset-md-1 h-100 bg-info">Photo</div>
-                <div class="col-6 col-sm-4 col-md-3 h-100 bg-danger text-center" id="skills">
-                    <h4>Compétences:</h4> <br>
-                    <div>--------------</div>
-                    <div>--------------</div>
-                    <div>--------------</div>
-                    <div>--------------</div>
-                    <div>--------------</div>
+                <div class="col-6 col-sm-4 col-md-3 h-100 " id="skills">
+                    <h4 class="">Compétences:</h4>
+                    <div class="d-flex align-items-center"><img src="assets/img/html5-icon-13.jpg" alt="" class="picto">
+                        <div class="skillPoint htmlSkillOn"></div>
+                        <div class="skillPoint htmlSkillOn"></div>
+                        <div class="skillPoint htmlSkillOn"></div>
+                        <div class="skillPoint htmlSkillOn"></div>
+                        <div class="skillPoint htmlSkillOff"></div>
+                        <div class="skillPoint htmlSkillOff"></div>
+                    </div>
+                    <div class="d-flex align-items-center"><img src="assets/img/logo-css3.png" alt="" class="picto">
+                        <div class="skillPoint cssSkillOn"></div>
+                        <div class="skillPoint cssSkillOn"></div>
+                        <div class="skillPoint cssSkillOn"></div>
+                        <div class="skillPoint cssSkillOn"></div>
+                        <div class="skillPoint cssSkillOn"></div>
+                        <div class="skillPoint cssSkillOn"></div>
+                    </div>
+                    <div class="d-flex align-items-center"><img src="assets/img/js.png" alt="" class="picto">
+                        <div class="skillPoint jsSkillOn"></div>
+                        <div class="skillPoint jsSkillOff"></div>
+                        <div class="skillPoint jsSkillOff"></div>
+                        <div class="skillPoint jsSkillOff"></div>
+                        <div class="skillPoint jsSkillOff"></div>
+                        <div class="skillPoint jsSkillOff"></div>
+                    </div>
+                    <div class="d-flex align-items-center"><img src="assets/img/PHP-Logo-PNG-Image.png" alt="" class="picto">
+                        <div class="skillPoint phpSkillOn"></div>
+                        <div class="skillPoint phpSkillOn"></div>
+                        <div class="skillPoint phpSkillOff"></div>
+                        <div class="skillPoint phpSkillOff"></div>
+                        <div class="skillPoint phpSkillOff"></div>
+                        <div class="skillPoint phpSkillOff"></div>
+                    </div>
+                    <div class="d-flex align-items-center"><img src="assets/img/1200px-MySQL.svg.png" alt="" class="picto">
+                        <div class="skillPoint sqlSkillOn"></div>
+                        <div class="skillPoint sqlSkillOn"></div>
+                        <div class="skillPoint sqlSkillOff"></div>
+                        <div class="skillPoint sqlSkillOff"></div>
+                        <div class="skillPoint sqlSkillOff"></div>
+                        <div class="skillPoint sqlSkillOff"></div>
+                    </div>
                 </div>
-                <div class="col-6 col-sm-7 col-md-4 offset-sm-3 offset-md-0 h-100 bg-secondary fs-6">Lorem ipsum dolor
+                <div class="col-6 col-sm-7 col-md-3 offset-sm-3 offset-md-1 h-100  fs-6">Lorem ipsum dolor
                     sit amet consectetur adipisicing elit. Corporis
                     dolorum necessitatibus voluptate porro harum aliquam commodi nam similique, voluptas, provident
                     autem libero sint accusantium fuga quasi obcaecati magnam blanditiis labore. lorem
@@ -103,23 +142,23 @@
 
             <div class="container  text-center">
                 <div class="row pt-7">
-                    <div class="col-6 col-md-3 bg-danger">
+                    <div class="col-6 col-md-3 ">
                         <div><img class="picto" src="assets/img/heart-fill.svg" alt="pictogramme d'un coeur"></div>
                         <div class="quality">Passioné</div>
                         <div>Passioné par le Web depuis toujours</div>
                     </div>
-                    <div class="col-6 col-md-3 bg-secondary">
+                    <div class="col-6 col-md-3 ">
                         <div><img class="picto" src="assets/img/search.svg" alt="pictogramme d'une loupe"></div>
                         <div class="quality">Curieux</div>
                         <div>Ne pas se limiter à la surface pour mieux comprendre</div>
                     </div>
-                    <div class="col-6 col-md-3 bg-warning">
+                    <div class="col-6 col-md-3 ">
                         <div><img class="picto" src="assets/img/Social_Work.svg" alt="pictogramme d'une main genereuse">
                         </div>
                         <div class="quality">Généreux</div>
                         <div>transmettre du savoir et aiguiller les autres</div>
                     </div>
-                    <div class="col-6 col-md-3 bg-info">
+                    <div class="col-6 col-md-3 ">
                         <div><img class="picto" src="assets/img/Muscle.svg" alt="pictogramme d'une loupe"></div>
                         <div class="quality">Compétiteur</div>
                         <div>Un jour je serai le meilleur dresseur</div>
@@ -129,19 +168,20 @@
         </section>
         <!-- Fin qualité, début ancien métier -->
         <section class="lastJob">
+            <br><br><br><br>
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <button type="button" class="collapsible">Open Collapsible</button>
+                        <button type="button" class="collapsible">Ancien métier</button>
                         <div class="content">
                             <p>Lorem ipsum...<br><br><br><br>
                                 <br>
                             </p>
-                        </div> <button type="button" class="collapsible">Open Collapsible</button>
+                        </div> <button type="button" class="collapsible">Ancien métier</button>
                         <div class="content">
                             <p>Lorem ipsum... <br><br><br><br><br></p>
                         </div>
-                        <button type="button" class="collapsible">Open Collapsible</button>
+                        <button type="button" class="collapsible">Ancien métier</button>
                         <div class="content">
                             <p>Lorem ipsum...<br><br><br><br><br></p>
                         </div>
@@ -157,24 +197,24 @@
 
     <!-- Partie diplome -->
     <section class="qualification">
-        <div class="container bg-info">
+        <div class="container ">
             <div class="row ">
                 <div class="col-4 text-center fs-1 ">Mes Diplomes </div>
-                <div class="col-6">Baccalaureat </div>
-                <div class="col-2">Lorem ipsum dolor sit amet. </div>
+                <div class="col-4 text-center">Baccalaureat </div>
+                <div class="col-2">Date et établissement </div>
             </div>
         </div>
     </section>
     <!-- Fin diplome -->
     <!-- Mes outils -->
-    <section class="tools">
+    <section class="tools mt-5">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-4 bg-warning fs-1 text-center ">
+                <div class="col-4  fs-1 text-center ">
                     Mes outils :
                 </div>
-                <div class="col-8 bg-primary">
-                    <ul class="toolList d-flex">
+                <div class="col-8 ">
+                    <ul class="toolList d-flex ">
                         <li><img class="tool" id="BootstrapImg" src="assets/img/bootstrap-logo.png" alt=""></li>
                         <li><img class="tool" src="assets/img/Visual_Studio_Code_1.35_icon.svg.png" alt=""></li>
                         <li><img class="tool" src="assets/img/git-bash-logo-B6475E8359-seeklogo.com.png" alt=""></li>
@@ -188,23 +228,25 @@
 
     <!-- Ce que je sais faire -->
     <section class="abilities">
-        <div class="container">
+        <div class="container text-center">
             <div class="row">
-                <div class="col-12 fs-1">ce que je sais faire</div>
-                <div class="col-4 bg-primary ">
-                    <div><img src="" alt="picto"></div>
-                    <div class="fs-2">travailler en équipe</div>
-                    <div>Lorem ipsum dolor sit amet.</div>
+                <div class="col-12 fs-1 my-5">ce que je sais faire</div>
+                <div class="col-4  ">
+                    <div><img src="assets/img/teamWork.png.opdownload" alt="picto équipe" class="picto"></div>
+                    <div class="fs-1 ">travailler en équipe</div>
+                    <div class="">Ecouter et s'adapater aux demandes des autres afin de mener à bien les projets de
+                        groupe.</div>
+                </div>
+                <div class="col-4 align-items-center">
+                    <div><img src="assets/img/html.svg" alt="picto" class="picto"></div>
+                    <div class="fs-1 ">Coder proprement</div>
+                    <div class="">Portionner, commenter et simplifier le code pour une meilleur lisibilité et une page
+                        plus optimisée.</div>
                 </div>
                 <div class="col-4 ">
-                    <div><img src="" alt="picto"></div>
-                    <div class="fs-2">travailler en équipe</div>
-                    <div>Lorem ipsum dolor sit amet.</div>
-                </div>
-                <div class="col-4 ">
-                    <div><img src="" alt="picto"></div>
-                    <div class="fs-2">travailler en équipe</div>
-                    <div>Lorem ipsum dolor sit amet.</div>
+                    <div><img src="assets/img/sizing.png" alt="picto" class="picto"></div>
+                    <div class="fs-1 ">Responsive Design</div>
+                    <div class="">Adapter le contenu au contenant, responsive design sur tout les périphériques.</div>
                 </div>
             </div>
         </div>
@@ -249,8 +291,8 @@
         <div class="backgroundImgFloating3">
             <div id="polygonTop3"></div>
             <div id="polygonBottom3"></div>
-            
-            
+
+
         </div>
     </section>
     <!-- Fin Contact -->
