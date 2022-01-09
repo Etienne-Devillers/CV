@@ -47,8 +47,12 @@
             <h1 class="title text-center  text-white ">Bonjour, je m'apelle <br>Etienne Devillers </h1><br>
             <h1 class="titleJob text-center text-white  ">Web Developer Junior</h1>
             <div class="scrollingMouse">
-        </div>
-       
+                <div class="chevrons">
+                    <div class="chevronDown"></div>
+                    <div class="chevronDown"></div>
+                </div>
+            </div>
+
 
         </div>
     </div>
@@ -72,7 +76,8 @@
         <!--  partie à propos -->
         <div class="container-fluid  h-100 ">
             <div class="row  ">
-                <div class="d-none d-sm-block col-sm-3 col-md-2 offset-sm-3 offset-md-1 h-100 bg-info">Photo</div>
+                <div class="d-none d-sm-block col-sm-3 col-md-2 offset-sm-3 offset-md-1 h-100 bg-info"><img
+                        class="myPic" src="assets/img/maPhoto.jpg" alt=""></div>
                 <div class="col-6 col-sm-4 col-md-3 h-100 " id="skills">
                     <h4 class="">Compétences:</h4>
                     <div class="d-flex align-items-center"><img src="assets/img/html5-icon-13.jpg" alt="" class="picto">
@@ -99,7 +104,8 @@
                         <div class="skillPoint jsSkillOff"></div>
                         <div class="skillPoint jsSkillOff"></div>
                     </div>
-                    <div class="d-flex align-items-center"><img src="assets/img/PHP-Logo-PNG-Image.png" alt="" class="picto">
+                    <div class="d-flex align-items-center"><img src="assets/img/PHP-Logo-PNG-Image.png" alt=""
+                            class="picto">
                         <div class="skillPoint phpSkillOn"></div>
                         <div class="skillPoint phpSkillOn"></div>
                         <div class="skillPoint phpSkillOff"></div>
@@ -107,7 +113,8 @@
                         <div class="skillPoint phpSkillOff"></div>
                         <div class="skillPoint phpSkillOff"></div>
                     </div>
-                    <div class="d-flex align-items-center"><img src="assets/img/1200px-MySQL.svg.png" alt="" class="picto">
+                    <div class="d-flex align-items-center"><img src="assets/img/1200px-MySQL.svg.png" alt=""
+                            class="picto">
                         <div class="skillPoint sqlSkillOn"></div>
                         <div class="skillPoint sqlSkillOn"></div>
                         <div class="skillPoint sqlSkillOff"></div>
@@ -140,7 +147,7 @@
         <!--  Mes qualités -->
         <section class="qualité">
 
-            <div class="container  text-center">
+            <div class="container  text-center text-white">
                 <div class="row pt-7">
                     <div class="col-6 col-md-3 ">
                         <div><img class="picto" src="assets/img/heart-fill.svg" alt="pictogramme d'un coeur"></div>
@@ -172,7 +179,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <button type="button" class="collapsible">Ancien métier</button>
+                        <button type="button" class="collapsible ">Ancien métier</button>
                         <div class="content">
                             <p>Lorem ipsum...<br><br><br><br>
                                 <br>
@@ -182,9 +189,11 @@
                             <p>Lorem ipsum... <br><br><br><br><br></p>
                         </div>
                         <button type="button" class="collapsible">Ancien métier</button>
-                        <div class="content">
-                            <p>Lorem ipsum...<br><br><br><br><br></p>
+                        <div class="content mb-5">
+                            <p class="">Lorem ipsum...<br><br><br><br><br></p>
                         </div>
+                        <br><br><br><br><br><br>
+                        <div class="pushBottom"></div>
                     </div>
                 </div>
             </div>
@@ -232,7 +241,7 @@
             <div class="row">
                 <div class="col-12 fs-1 my-5">ce que je sais faire</div>
                 <div class="col-4  ">
-                    <div><img src="assets/img/teamWork.png.opdownload" alt="picto équipe" class="picto"></div>
+                    <div><img src="assets/img/teamWork.png" alt="picto équipe" class="picto"></div>
                     <div class="fs-1 ">travailler en équipe</div>
                     <div class="">Ecouter et s'adapater aux demandes des autres afin de mener à bien les projets de
                         groupe.</div>
@@ -260,11 +269,12 @@
 
         <section class="freeAgent">
             <div class="container pt-7">
-                <div class="row  align-items-center">
-                    <div class="col-2 fs-1">Disponibilités </div>
-                    <div class="col-6 offset-1 text-center fs-2">
+                <div class="row  align-items-center text-white">
+                    <div class="col-2 offset-1 fs-1">Disponibilités </div>
+                    <div class="col-6 offset-3 text-center fs-2 position-relative">
                         <div>Je suis disponible</div>
                         <div>N'hésitez pas à me contacter</div>
+
                     </div>
                 </div>
             </div>
@@ -276,12 +286,38 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 fs-1">Portfolio</div>
-                <div class="col-4 bg-danger">1</div>
-                <div class="col-4 bg-secondary">1</div>
-                <div class="col-4 bg-info">1</div>
-                <div class="col-4 bg-primary">1</div>
-                <div class="col-4 bg-warning">1</div>
-                <div class="col-4 bg-danger">1</div>
+                <div class="col-sm-10 col-md-6 col-lg-4">
+                    <div class="portfolioItem  ">
+                        <div class="thumbnail"></div>
+                        <div class="text-center fs-5">menu principal de BF 2042</div>
+                        <div class="usedTechno d-flex text-center text-white">
+                            <div class="htmlTechno">html</div>
+                            <div class="cssTechno">css</div>
+                            <div class="jsTechno"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-10 col-md-6 col-lg-4 ">
+                    <div class="portfolioItem  ">
+                    
+                    </div>
+                </div>
+                <div class="col-sm-10 col-md-6 col-lg-4 ">
+                    <div class="portfolioItem  ">
+                    </div>
+                </div>
+                <div class="col-sm-10 col-md-6 col-lg-4 ">
+                    <div class="portfolioItem  ">
+                    </div>
+                </div>
+                <div class="col-sm-10 col-md-6 col-lg-4 ">
+                    <div class="portfolioItem  ">
+                    </div>
+                </div>
+                <div class="col-sm-10 col-md-6 col-lg-4 ">
+                    <div class="portfolioItem  ">
+                    </div>
+                </div>
             </div>
         </div>
     </section>

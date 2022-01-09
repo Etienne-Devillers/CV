@@ -21,7 +21,7 @@ body {
 }
 
 .scrollingMouse {
-    
+
     width: 40px;
     height: 70px;
     border: solid 2px #fff;
@@ -40,13 +40,62 @@ body {
     left: calc(50% - 5px);
     border-radius: 10px;
     animation: mouse 1.5s infinite;
+    box-shadow: 0px -5px 3px 1px #ffffff66;
 
+}
+
+.chevrons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 30px;
+
+    margin-left: 3px;
+    margin-top: 65px;
+}
+
+.chevronDown {
+    position: relative;
+    height: 15px;
+    width: 15px;
+    border: solid white;
+    transform: rotate(45deg);
+    border-width: 0 3px 3px 0;
+
+}
+
+.chevronDown:nth-child(1) {
+    animation: pulse 0.5s ease infinite alternate;
+}
+
+.chevronDown:nth-child(2) {
+    animation: pulse 500ms ease infinite alternate 250ms;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes mouse {
     0% {
-        opacity: 1;
+        opacity: 0;
         top: 10px;
+    }
+
+    40% {
+        opacity: 1;
+
     }
 
     100% {
@@ -192,6 +241,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0% 70%;
+    background-attachment: fixed;
 
 
 }
@@ -234,6 +284,7 @@ body {
     height: 50vh;
 }
 
+
 #skills {}
 
 /*  Section background image flottante */
@@ -244,6 +295,7 @@ body {
     width: 100vw;
     background-color: white;
     position: absolute;
+    top: -1px;
     z-index: -1;
 }
 
@@ -253,16 +305,17 @@ body {
     width: 100vw;
     background-color: white;
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     z-index: -1;
 }
 
 .backgroundImgFloating {
-    background: url(../img/brownBackground.jpg);
+    background: url(../img/Dark-grey-background.jpg);
     width: 100vw;
     min-height: 90vh;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     position: relative;
     z-index: 1;
 }
@@ -281,6 +334,11 @@ body {
 
 }
 
+.myPic {
+    width: 100%;
+    margin-top: 1.5em;
+
+}
 
 .skillPoint {
     height: 12px;
@@ -371,12 +429,13 @@ body {
 }
 
 .backgroundImgFloating2 {
-    background: url(../img/brownBackground.jpg);
+    background: url(../img/Dark-grey-background.jpg);
     width: 100vw;
     min-height: 40vh;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    background-attachment: fixed;
     z-index: 1;
 }
 
@@ -418,12 +477,15 @@ body {
 
 
 
+.lastJob {
+    min-height: 70vh;
+}
 
 
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
-    background-color: #eee;
-    color: #444;
+    background-color: rgb(61, 58, 58);
+    color: #fff;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -431,12 +493,13 @@ body {
     text-align: left;
     outline: none;
     font-size: 15px;
+    box-shadow: 0 0 4px rgb(0 0 0 / 20%);
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
 .collapsible:hover {
-    background-color: #ccc;
+    background-color: rgb(133, 131, 131);
 }
 
 /* Style the collapsible content. Note: hidden by default */
@@ -446,7 +509,8 @@ body {
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.2s ease-out;
-    background-color: #f1f1f1;
+    background-color: #424141;
+    color: #fff;
 
 }
 
@@ -462,4 +526,59 @@ body {
 .active:after {
     content: "\2796";
     /* Unicode character for "minus" sign (-) */
+}
+
+
+
+
+
+
+
+/*  Contactez moi */
+
+
+
+
+
+/* ----------------Portfolio */
+
+.portfolioItem {
+    width: 85%;
+    height: 25vh;
+    border: solid 3px black;
+    margin-top: 1em;
+    position: relative;
+    border-radius: 10px;
+
+}
+
+.thumbnail {
+    width: 100%;
+    height: 70%;
+    background-image: url(../img/bf2042.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.usedTechno {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+}
+
+.htmlTechno {
+    width: 37.4%;
+    height: 100;
+    background-color: #E34C26;
+    border-radius: 0 0 0 5px;
+    
+}
+
+.cssTechno {
+    width: 62.6%;
+    background-color: #563D7C;
+    border-radius:0 0 5px 0;
+
 }
