@@ -1,9 +1,16 @@
+@font-face {
+    font-family: "Police1";
+    src: url(../font/Rajdhani-Medium.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    font-family: "Police1";
 }
-
+body {
+    background-color: #424141; }
 .pt-7 {
     padding-top: 7em;
 }
@@ -18,6 +25,7 @@ a {
 
 body {
     height: 2000px;
+    color: white;
 }
 
 .scrollingMouse {
@@ -307,7 +315,7 @@ bottom: 20%;
 
 
 /* -------------------- Section Background image */
-#containerBackground {}
+
 
 #imageBackground {
     background: url(../img/office-gb104c0836_1920.jpg);
@@ -368,7 +376,7 @@ bottom: 20%;
     clip-path: polygon(50% 50%, 0 0, 100% 0);
     height: 20vh;
     width: 100vw;
-    background-color: white;
+    background-color: #424141;
     position: absolute;
     top: -1px;
     z-index: -1;
@@ -378,7 +386,7 @@ bottom: 20%;
     clip-path: polygon(50% 75%, 100% 25%, 100% 100%, 0 100%, 0 25%);
     height: 20vh;
     width: 100vw;
-    background-color: white;
+    background-color: #424141;
     position: absolute;
     bottom: -1px;
     z-index: -1;
@@ -488,7 +496,7 @@ bottom: 20%;
     clip-path: polygon(100% 50%, 0 0, 100% 0);
     height: 20vh;
     width: 100vw;
-    background-color: white;
+    background-color: #424141;
     position: absolute;
     z-index: -1;
 }
@@ -497,7 +505,7 @@ bottom: 20%;
     clip-path: polygon(50% 75%, 0% 25%, 100% 100%, 0 100%, 0 25%);
     height: 20vh;
     width: 100vw;
-    background-color: white;
+    background-color: #424141;
     position: absolute;
     bottom: 0;
     z-index: -1;
@@ -602,12 +610,43 @@ bottom: 20%;
     content: "\2796";
     /* Unicode character for "minus" sign (-) */
 }
+/* ---------------------Mes diplomes---------------- */
 
+.separateBar3 {
+    width: 3px;
+    height: 80%;
+    border-radius: 2px;
+    background-color: rgba(189, 184, 184, 0.178);
+    position: absolute;
+    right: 1em;
+    bottom: 10%;
+    
+}
 
+/*--------------------------- Ce que je sais faire ----------------------- */
+.separateBar2 {
+    width: 3px;
+    height: 60%;
+    border-radius: 2px;
+    background-color: rgb(10, 10, 10);
+    position: absolute;
+    
+    bottom: 20%;
+    
+}
+.separateBar2right {
+    right: 0;
+}
 
-
-
-
+.separateBar {
+    width: 80%;
+    height: 3px;
+    border-radius: 2px;
+    background-color: rgba(189, 184, 184, 0.178);
+    position: absolute;
+    left: 10%;
+    top: -1em;
+}
 
 /*  Contactez moi */
 
@@ -620,13 +659,13 @@ bottom: 20%;
 .portfolioItem {
     width: 85%;
     height: 25vh;
-    border: solid 3px black;
+    border: solid 1px black;
     margin-top: 1em;
     position: relative;
     border-radius: 10px;
 
 }
-
+/* ------------------Portfolio 1 */
 .thumbnail {
     width: 100%;
     height: 70%;
@@ -647,13 +686,55 @@ bottom: 20%;
     width: 37.4%;
     height: 100;
     background-color: #E34C26;
-    border-radius: 0 0 0 5px;
+    border-radius: 0 0 0 8px;
 
 }
 
 .cssTechno {
     width: 62.6%;
     background-color: #563D7C;
-    border-radius: 0 0 5px 0;
+    border-radius: 0 0 8px 0;
+
+}
+
+/* ------------portfolio2---------- */
+
+
+
+.thumbnail2 {
+    width: 100%;
+    height: 70%;
+    background-image: url(../img/Bourse.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.usedTechno2 {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+}
+
+.htmlTechno2 {
+    width: 46%;
+    height: 100;
+    background-color: #E34C26;
+    border-radius: 0 0 0 8px;
+
+}
+
+.cssTechno2 {
+    width: 50%;
+    background-color: #563D7C;
+    
+
+}
+
+.jsTechno2 {
+    width: 4%;
+    background-color: #F1E05A;
+    border-radius: 0 0 8px 0;
 
 }
