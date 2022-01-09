@@ -328,6 +328,7 @@ body {
     background-repeat: no-repeat;
     background-position: 0% 70%;
     background-attachment: fixed;
+    position: relative
 
 
 }
@@ -728,9 +729,7 @@ body {
 
 /* -------------------Rubrique contact ---------------- */
 
-.form {
-    margin-top: ;
-}
+
 
 .formulaire {
     display: flex;
