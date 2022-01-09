@@ -9,8 +9,11 @@
     list-style-type: none;
     font-family: "Police1";
 }
+
 body {
-    background-color: #424141; }
+    background-color: #424141;
+}
+
 .pt-7 {
     padding-top: 7em;
 }
@@ -118,8 +121,8 @@ body {
     font-size: 0;
     line-height: 1.5;
     position: absolute;
-left: calc(50% - 20rem);
-bottom: 20%;
+    left: calc(50% - 20rem);
+    bottom: 20%;
 }
 
 .appearingWord span {
@@ -176,7 +179,7 @@ bottom: 20%;
 }
 
 .appearingWord span:nth-child(9) {
-    animation-delay:1.6s;
+    animation-delay: 1.6s;
 }
 
 .appearingWord span:nth-child(10) {
@@ -523,31 +526,11 @@ bottom: 20%;
 }
 
 
-/* 
-#polygonTop3 {
-    clip-path: polygon(50% 0, 0 50%, 100% 50%);
-    height: 20vh;
-    width: 100vw;
-    background-color: gray;
-    position: absolute;
-    top: -10vh;
-    z-index: -1;
-}
 
-#polygonBottom3 {
-    clip-path: polygon(50% 50%, 0 0%, 100% 0%);
-    height: 20vh;
-    width: 100vw;
-    background-color: grey;
-    position: absolute;
-    bottom: -19.9vh;
-    z-index: -1;
-
-} */
 
 .backgroundImgFloating3 {
     background-color: grey;
-    clip-path: polygon(50% 0, 100% 15%, 100% 85%, 50% 100%, 0 85%, 0 15%);
+    clip-path: polygon(50% 0, 100% 0%, 100% 85%, 50% 100%, 0 85%, 0 0%);
     width: 100vw;
     min-height: 50vh;
     background-size: cover;
@@ -610,6 +593,7 @@ bottom: 20%;
     content: "\2796";
     /* Unicode character for "minus" sign (-) */
 }
+
 /* ---------------------Mes diplomes---------------- */
 
 .separateBar3 {
@@ -620,7 +604,7 @@ bottom: 20%;
     position: absolute;
     right: 1em;
     bottom: 10%;
-    
+
 }
 
 /*--------------------------- Ce que je sais faire ----------------------- */
@@ -630,10 +614,11 @@ bottom: 20%;
     border-radius: 2px;
     background-color: rgb(10, 10, 10);
     position: absolute;
-    
+
     bottom: 20%;
-    
+
 }
+
 .separateBar2right {
     right: 0;
 }
@@ -665,6 +650,7 @@ bottom: 20%;
     border-radius: 10px;
 
 }
+
 /* ------------------Portfolio 1 */
 .thumbnail {
     width: 100%;
@@ -728,7 +714,7 @@ bottom: 20%;
 .cssTechno2 {
     width: 50%;
     background-color: #563D7C;
-    
+
 
 }
 
@@ -737,4 +723,155 @@ bottom: 20%;
     background-color: #F1E05A;
     border-radius: 0 0 8px 0;
 
+}
+
+
+/* -------------------Rubrique contact ---------------- */
+
+.form {
+    margin-top: ;
+}
+
+.formulaire {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#lastname {
+    width: 16rem;
+}
+
+#firstname {
+    width: 16rem;
+    margin-left: 3rem;
+}
+
+#email {
+    width: 35rem;
+}
+
+#subject {
+    width: 35rem;
+}
+
+#message {
+    width: 35rem;
+}
+
+/* ---------------Lien Externe-------------- */
+*:focus,
+*:active {
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html,
+
+.externalLinks {
+    position: relative;
+    width: 100vw;
+}
+
+.wrapper {
+    display: inline-flex;
+    position: absolute;
+
+    left: calc(50% - 105px);
+
+}
+
+.linkedinLogo {
+    width: 40px;
+}
+
+.gitHubLogo {
+    width: 60px;
+}
+
+.discordLogo {
+    width: 40px;
+}
+
+.wrapper .icon {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background-color: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.wrapper .linkedin:hover,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before {
+    background-color: #0391d8;
+    color: #ffffff;
+}
+
+
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+
+.wrapper .discord:hover,
+.wrapper .discord:hover .tooltip,
+.wrapper .discord:hover .tooltip::before {
+    background-color: #5B6DAF;
+    color: #ffffff;
 }
