@@ -12,6 +12,7 @@
 
 body {
     background-color: #424141;
+    overflow-x: hidden;
 }
 
 .pt-7 {
@@ -363,6 +364,19 @@ body {
     margin: 0em 0.5em;
 }
 
+.mailPicto {
+    filter: invert(11%) sepia(87%) saturate(5608%) hue-rotate(358deg) brightness(109%) contrast(96%);
+}
+
+.phonePicto {
+    filter: invert(32%) sepia(85%) saturate(833%) hue-rotate(76deg) brightness(101%) contrast(98%);
+}
+
+.locationPicto {
+    filter: invert(11%) sepia(87%) saturate(5608%) hue-rotate(358deg) brightness(109%) contrast(96%);
+}
+
+
 
 
 /* Section profil */
@@ -613,6 +627,11 @@ body {
 }
 
 /*--------------------------- Ce que je sais faire ----------------------- */
+
+.abilities {
+    margin-top: 6em;
+}
+
 .separateBar2 {
     width: 3px;
     height: 60%;
@@ -630,12 +649,12 @@ body {
 
 .separateBar {
     width: 80%;
-    height: 3px;
+    padding: 3px 0;
     border-radius: 2px;
-    background-color: rgba(189, 184, 184, 0.178);
+    background-color: rgba(230, 230, 230, 0.377);
     position: absolute;
     left: 10%;
-    top: -1em;
+    bottom: -6em;
 }
 
 /*  Contactez moi */

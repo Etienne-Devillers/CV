@@ -72,13 +72,16 @@
 
     <div class="personnalInformations d-flex justify-content-around align-items-center">
         <div>
-            <div class="infos"><img src="assets/img/envelope-fill.svg" alt="">Devillers.etienne80@gmail.com </div>
+            <div class="infos "><img src="assets/img/envelope-fill.svg" class=" mailPicto"
+                    alt="pictogramme qui represente une enveloppe">Devillers.etienne80@gmail.com </div>
         </div>
         <div>
-            <div class="infos"><img src="assets/img/telephone-fill.svg" alt=""> 0615879407</div>
+            <div class="infos"><img src="assets/img/telephone-fill.svg" class="  phonePicto"
+                    alt="pictogramme qui represente un téléphone"> 0615879407</div>
         </div>
         <div>
-            <div class="infos"><img src="assets/img/geo-alt-fill.svg" alt="">Amiens, Picardie, France </div>
+            <div class="infos"><img src="assets/img/geo-alt-fill.svg" class=" locationPicto "
+                    alt="pictogramme qui represente une localisation">Amiens, Picardie, France </div>
         </div>
     </div>
     <!-- Fin Section Accueil -->
@@ -89,9 +92,9 @@
         <!--  partie à propos -->
         <div class="container-fluid  h-100 ">
             <div class="row  ">
-                <div class="d-none d-md-block col-sm-3 col-md-2 offset-sm-3 offset-md-1 h-100 bg-info"><img
-                        class="myPic" src="assets/img/maPhoto.jpg" alt=""></div>
-                <div class="col-6 col-sm-4 col-md-3 h-100 bg-warning" id="skills">
+                <!-- <div class="d-none d-md-block col-sm-3 col-md-2 offset-sm-3 offset-md-1 h-100 bg-info"><img
+                        class="myPic" src="assets/img/maPhoto.jpg" alt=""></div> -->
+                <div class=" col-7 offset-3 offset-md-3 col-md-3 h-100 bg-warning d-flex align-items-center align-items-md-end" id="skills">
                     <h4 class="">Compétences:</h4>
                     <div class="d-flex align-items-center"><img src="assets/img/html5-icon-13.jpg" alt="" class="picto">
                         <div class="skillPoint htmlSkillOn"></div>
@@ -136,7 +139,7 @@
                         <div class="skillPoint sqlSkillOff"></div>
                     </div>
                 </div>
-                <div class="col-6 col-sm-7 col-md-3 offset-sm-3 offset-md-0 h-100 bg-danger fs-6">Lorem ipsum dolor
+                <div class=" col-7 col-md-3 offset-3 offset-md-0 h-100 bg-danger fs-6">Lorem ipsum dolor
                     sit amet consectetur adipisicing elit. Corporis
                     dolorum necessitatibus voluptate porro harum aliquam commodi nam similique, voluptas, provident
                     autem libero sint accusantium fuga quasi obcaecati magnam blanditiis labore. lorem
@@ -218,7 +221,7 @@
     <!-- Fin Partie qualité + ancien métier  -->
 
     <!-- Partie diplome -->
-    <section class="qualification">
+    <section class="qualification position-relative">
         <div class="container ">
             <div class="row justif align-items-center">
                 <div class="col-4 text-center fs-1 ">Mes Diplomes </div>
@@ -238,10 +241,11 @@
                 <div class="col-2 fs-4">2014 - Abbeville </div>
             </div>
         </div>
+        <hr class="separateBar"></hr>
     </section>
     <!-- Fin diplome -->
     <!-- Mes outils -->
-                                <!-- <section class="tools mt-5">
+    <!-- <section class="tools mt-5">
                                     <div class="container">
                                         <div class="row align-items-center">
                                             <div class="col-4  fs-1 text-center ">
@@ -261,13 +265,13 @@
                                     </div>
                                 </section> -->
     <!-- Fin outils -->
-
+  
     <!-- Ce que je sais faire -->
     <section class="abilities">
         <div class="container text-center">
-            <div class="row">
+            <div class="row" >
                 <div class="col-12 fs-1 my-5 position-relative">ce que je sais faire
-                    <div class="separateBar"></div>
+                   
                 </div>
                 <div class="col-4  ">
                     <div><img src="assets/img/teamWork.png" alt="picto équipe" class="picto"></div>
@@ -284,7 +288,7 @@
                 <div class="col-4 ">
                     <div><img src="assets/img/sizing.png" alt="picto" class="picto"></div>
                     <div class="fs-1 ">Responsive Design</div>
-                    <div class="">Adapter le contenu au contenant, responsive design sur tout les périphériques.</div>
+                    <div class="">Adapter le contenu au contenant, responsive design sur tous les périphériques.</div>
                 </div>
             </div>
         </div>
@@ -297,10 +301,10 @@
         <div id="polygonBottom2"></div>
 
         <section class="freeAgent">
-            <div class="container pt-7">
+            <div class="container pt-5">
                 <div class="row  align-items-center text-white">
-                    <div class="col-2 offset-1 fs-1">Disponibilités </div>
-                    <div class="col-6 offset-3 text-center fs-2 position-relative">
+                    <div class="col-3 offset-1 fs-1">En ce moment </div>
+                    <div class="col-6 offset-2 text-center fs-2 pt-5 position-relative">
                         <div>Je suis disponible</div>
                         <div>N'hésitez pas à me contacter</div>
 
@@ -387,7 +391,7 @@
                             </div>
                             <div>
                                 <label for="message"></label>
-                                <textarea type="text" class="form-control" placeholder="Votre message" rows=10
+                                <textarea type="text" class="form-control" placeholder="Votre message" rows=8
                                     id="message" required></textarea>
                             </div>
 
@@ -405,7 +409,8 @@
     <section class="externalLinks">
         <div class="wrapper">
 
-            <div class="icon linkedin"><img class="linkedinLogo" src="assets/img/8-2-linkedin-png-picture-thumb.png" alt="">
+            <div class="icon linkedin"><img class="linkedinLogo" src="assets/img/8-2-linkedin-png-picture-thumb.png"
+                    alt="">
                 <div class="tooltip">linkedin</div>
                 <span><i class="fab fa-linkedin"></i></span>
             </div>
