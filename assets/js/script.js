@@ -1,19 +1,19 @@
 window.onscroll = function () {navBarFunction()};
 
 function navBarFunction() {
-console.log(window.scrollY)
-    if (window.scrollY > 40 || document.documentElement.scrolltop > 40) {
-        document.getElementById("navBar").style.padding = "1.5rem 1.5rem";
-        document.getElementById("navBar").style.opacity = "1";
-        document.getElementById("navName").style.fontSize ="1em";
-        document.getElementById("navBar").style.backgroundColor = "#FFF";
-    } else {
-        document.getElementById("navBar").style.padding = "2.2rem 1.5rem";
-        document.getElementById("navBar").style.opacity = "0.5";
-        document.getElementById("navName").style.fontSize ="2.8em";
-        document.getElementById("navBar").style.backgroundColor = "";
-    }
-}
+  console.log(window.scrollY)
+      if (window.scrollY > 40 || document.documentElement.scrolltop > 40) {
+          document.getElementById("navBar").style.padding = "1.5rem 1.5rem";
+          document.getElementById("navBar").style.opacity = "1";
+          document.getElementById("navName").style.fontSize ="1em";
+          document.getElementById("navBar").style.backgroundColor = "#FFF";
+      } else {
+          document.getElementById("navBar").style.padding = "2.2rem 1.5rem";
+          document.getElementById("navBar").style.opacity = "0.5";
+          document.getElementById("navName").style.fontSize ="2.8em";
+          document.getElementById("navBar").style.backgroundColor = "";
+      }
+  }
 
 // Section nav bar
 
