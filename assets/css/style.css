@@ -11,7 +11,7 @@
 }
 
 body {
-    background-color: rgb(173, 172, 172);
+    background-color: white;
     overflow-x: hidden;
 }
 
@@ -39,6 +39,7 @@ body {
     border: solid 2px #fff;
     border-radius: 50px;
     position: relative;
+    transition: 0.5s;
     margin-top: 2em;
     margin-left: calc(50% - 35px);
 }
@@ -196,13 +197,17 @@ body {
 .navbar{
     border-bottom: solid 1px rgb(68, 66, 66);
     transition: 500ms;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
 }
 
-.navbar .test2 {
+.navbar .navItem {
     position: relative  ;
+    pointer-events: none;
+    
 
 }
-.navbar .test2::after{
+.navbar .navItem::after{
     position: absolute;
     left: 0;
     bottom: 5px;
@@ -213,80 +218,23 @@ body {
     transition: 0.3s;
 }
 
-.navbar .test2:hover::after{
+.navbar .navItem:hover::after{
     width: 100%;
 }
 
 .navbar ul li {
-    margin: 0 15px;
+
+    padding: 1.5rem 15px;
+    transition: 0.5s;
+
 }
 
-/*--------------------  Media Query nav bar */
-
-@media screen and (max-width: 785px) {
-    .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: .8rem;
-        flex-direction: column;
-        background-color: rgb(179, 174, 174);
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-    }
-
-    .nav-menu li {
-        border-bottom: solid 1px;
-        border-color: grey;
-        width: 80%;
-        color: #000;
-    }
-
-    .nav-link {
-        padding-bottom: 20px;
-
-    }
-
-    .nav-menu.active {
-        left: 0;
-    }
-
-    .nav-item {
-        margin: 0.5rem 0;
-    }
-
-    #navbar {
-        background-color: #FFF;
-        opacity: 1;
-    }
-
-    .hamburger {
-        display: block;
-        cursor: pointer;
-    }
-
-    /* -------------------- Animation burger -> croix */
-
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-
-    .personnalInformations {
-        flex-direction: column;
-    }
+.nav-item{
+    cursor: pointer;
 }
 
-/* Fin media query */
+
+
 
 
 /* -------------------- Fin de section Navbar */
@@ -376,11 +324,15 @@ body {
     
     border-right: solid 1px rgb(223, 221, 221);
 }
-.photo{
+.photoProfil{
     width: 90%;
     height: 400px;
-    background-color: aqua;
     margin: 0 auto;   
+}
+.photoProfil img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
 }
 
 .profilBox{
@@ -403,7 +355,7 @@ body {
     clip-path: polygon(50% 50%, 0 0, 100% 0);
     height: 20vh;
     width: 100vw;
-    background-color: rgb(173, 172, 172);
+    background-color: white;
     position: absolute;
     top: -1px;
     z-index: -1;
@@ -413,7 +365,7 @@ body {
     clip-path: polygon(50% 75%, 100% 25%, 100% 100%, 0 100%, 0 25%);
     height: 20vh;
     width: 100vw;
-    background-color: rgb(173, 172, 172);
+    background-color: white;
     position: absolute;
     bottom: -1px;
     z-index: -1;
@@ -581,18 +533,27 @@ body {
     /* Unicode character for "minus" sign (-) */
 }
 
+.separateBar{
+    width: 80%;
+    margin: 5em auto;
+}
+.separateBarSkills{
+    width: 80%;
+    margin: 2em auto;
+}
 /*--------------------------- SKILLS ----------------------- */
 
 .skillsBox{
     
-    margin: 5em auto;
+    margin:  auto;
     border-radius: 5px;
     background-color: rgb(61, 58, 58);
     box-shadow: 5px 10px 30px black;
+    width: 80%;
 }
 
 .skillsImg {
-  width: 100%;
+    width: 60%;
 }
 
 /*  Contactez moi */
