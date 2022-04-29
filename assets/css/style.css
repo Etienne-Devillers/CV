@@ -11,7 +11,7 @@
 }
 
 body {
-    background-color: #424141;
+    background-color: rgb(173, 172, 172);
     overflow-x: hidden;
 }
 
@@ -29,7 +29,7 @@ a {
 
 body {
     height: 2000px;
-    color: white;
+    color: black;
 }
 
 .scrollingMouse {
@@ -193,58 +193,32 @@ body {
 
 /*--------------------  Section Navbar */
 
-.bar {
-    display: block;
-    width: 25px;
+.navbar{
+    border-bottom: solid 1px rgb(68, 66, 66);
+    transition: 500ms;
+}
+
+.navbar .test2 {
+    position: relative  ;
+
+}
+.navbar .test2::after{
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    content: '';
+    width: 0%;
     height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: #101010;
+    background-color: black;
+    transition: 0.3s;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2.2rem 0.5rem;
-    transition: 0.3s;
-    opacity: 0.5;
-    position: fixed;
+.navbar .test2:hover::after{
     width: 100%;
-    z-index: 2;
-    margin: 0;
-    box-shadow: 0 0 4px rgb(0 0 0 / 20%);
 }
 
-.nav-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0;
-    padding-left: 0;
-}
-
-.nav-name {
-    font-size: 2.8em;
-    transition: 0.3s;
-}
-
-.hamburger {
-    display: none;
-    padding-top: 6px;
-    padding-bottom: 5px;
-
-}
-
-.nav-link {
-    padding: 0em 0.3em;
-    color: black;
-}
-
-.nav-link:hover {
-
-    color: black;
+.navbar ul li {
+    margin: 0 15px;
 }
 
 /*--------------------  Media Query nav bar */
@@ -345,7 +319,7 @@ body {
 
 .title {
     font-size: 3em;
-    padding-top: 4em;
+    padding-top: 3em;
 }
 
 .titleJob {
@@ -366,6 +340,14 @@ body {
     align-items: center;
     display: flex;
     font-size: 1em;
+}
+
+.t-white{
+    color: white;
+}
+
+.t-black{
+    color: black;
 }
 
 .infos img {
@@ -390,16 +372,30 @@ body {
 
 /* Section profil */
 
-.profil1 {
-    height: 50vh;
+.leftColProfil{
+    
+    border-right: solid 1px rgb(223, 221, 221);
+}
+.photo{
+    width: 90%;
+    height: 400px;
+    background-color: aqua;
+    margin: 0 auto;   
 }
 
-
-#skills {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+.profilBox{
+    
+    width: 70%;
+    margin : 5em auto;
+    border-radius: 5px;
+    background-color: rgb(61, 58, 58);
+    box-shadow: 5px 10px 30px black;
 }
+
+.profilContent{
+    font-size: 20px;
+}
+
 
 /*  Section background image flottante */
 
@@ -407,7 +403,7 @@ body {
     clip-path: polygon(50% 50%, 0 0, 100% 0);
     height: 20vh;
     width: 100vw;
-    background-color: #424141;
+    background-color: rgb(173, 172, 172);
     position: absolute;
     top: -1px;
     z-index: -1;
@@ -417,7 +413,7 @@ body {
     clip-path: polygon(50% 75%, 100% 25%, 100% 100%, 0 100%, 0 25%);
     height: 20vh;
     width: 100vw;
-    background-color: #424141;
+    background-color: rgb(173, 172, 172);
     position: absolute;
     bottom: -1px;
     z-index: -1;
@@ -448,59 +444,6 @@ body {
 
 }
 
-.myPic {
-    width: 100%;
-    margin-top: 1.5em;
-
-}
-
-.skillPoint {
-    height: 12px;
-    min-width: 30px;
-
-    margin-left: 5px;
-    border: solid 1px;
-}
-
-.htmlSkillOn {
-    background: #FF7D1B;
-}
-
-.htmlSkillOff {
-    background: gray;
-}
-
-.cssSkillOn {
-    background: #3399FF;
-}
-
-.cssSkillOff {
-    background: gray;
-}
-
-.jsSkillOn {
-    background: #F9D438;
-}
-
-.jsSkillOff {
-    background: gray;
-}
-
-.phpSkillOn {
-    background: #6684B6;
-}
-
-.phpSkillOff {
-    background: gray;
-}
-
-.sqlSkillOn {
-    background: #E48E00;
-}
-
-.sqlSkillOff {
-    background: gray;
-}
 
 
 
@@ -576,6 +519,22 @@ body {
 }
 
 
+
+
+/* ---------------------Mes diplomes---------------- */
+
+.separateBar3 {
+    width: 3px;
+    height: 80%;
+    border-radius: 2px;
+    background-color: rgba(48, 47, 47, 0.178);
+    position: absolute;
+    right: 1em;
+    bottom: 10%;
+
+}
+
+/* Ancien job */
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
     background-color: rgb(61, 58, 58);
@@ -622,48 +581,18 @@ body {
     /* Unicode character for "minus" sign (-) */
 }
 
-/* ---------------------Mes diplomes---------------- */
+/*--------------------------- SKILLS ----------------------- */
 
-.separateBar3 {
-    width: 3px;
-    height: 80%;
-    border-radius: 2px;
-    background-color: rgba(189, 184, 184, 0.178);
-    position: absolute;
-    right: 1em;
-    bottom: 10%;
-
+.skillsBox{
+    
+    margin: 5em auto;
+    border-radius: 5px;
+    background-color: rgb(61, 58, 58);
+    box-shadow: 5px 10px 30px black;
 }
 
-/*--------------------------- Ce que je sais faire ----------------------- */
-
-.abilities {
-    margin-top: 6em;
-}
-
-.separateBar2 {
-    width: 3px;
-    height: 60%;
-    border-radius: 2px;
-    background-color: rgb(10, 10, 10);
-    position: absolute;
-
-    bottom: 20%;
-
-}
-
-.separateBar2right {
-    right: 0;
-}
-
-.separateBar {
-    width: 80%;
-    padding: 3px 0;
-    border-radius: 2px;
-    background-color: rgba(230, 230, 230, 0.377);
-    position: absolute;
-    left: 10%;
-    bottom: -6em;
+.skillsImg {
+  width: 100%;
 }
 
 /*  Contactez moi */

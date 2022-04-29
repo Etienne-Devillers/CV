@@ -1,31 +1,24 @@
-window.onscroll = function () {navBarFunction()};
+
+// navBar
+
+
 
 function navBarFunction() {
-  console.log(window.scrollY)
+  console.log(window.scrollY);
       if (window.scrollY > 40 || document.documentElement.scrolltop > 40) {
-          document.getElementById("navBar").style.padding = "1.5rem 1.5rem";
-          document.getElementById("navBar").style.opacity = "1";
-          document.getElementById("navName").style.fontSize ="1em";
-          document.getElementById("navBar").style.backgroundColor = "#FFF";
+          document.querySelector('.navbar').classList.add('bg-light') ;
+          document.querySelector('.navbar').classList.remove('py-4') ;
+
       } else {
-          document.getElementById("navBar").style.padding = "2.2rem 1.5rem";
-          document.getElementById("navBar").style.opacity = "0.5";
-          document.getElementById("navName").style.fontSize ="2.8em";
-          document.getElementById("navBar").style.backgroundColor = "";
+
+        document.querySelector('.navbar').classList.remove('bg-light') ;
+        document.querySelector('.navbar').classList.add('py-4') ;
+
       }
   }
 
-// Section nav bar
+  window.onscroll = function () {navBarFunction()};
 
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
-
-hamburger.addEventListener("click", mobileMenu);
-
-function mobileMenu() {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-}
 // retire la classe active du burger et du menu mobile
 const navLink = document.querySelectorAll(".nav-link");
 

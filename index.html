@@ -14,37 +14,46 @@
 <body>
     <!-- Section Navbar -->
 
-    <nav class="navbar" id="navBar">
-        <a href="#" class="nav-name" id="navName">Etienne Devillers</a>
-        <ul class="nav-menu" id="navLinkMenu">
-            <li class="nav-item">
-                <a href="#" class="nav-link">Profil</a>
-            </li>
 
-            <li class="nav-item">
-                <a href="#" class="nav-link">Experiences</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Formations</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Competences</a>
-            </li>
-            <li class="nav-item mb-0">
-                <a href="#" class="nav-link">contact</a>
-            </li>
-        </ul>
-        <div class="hamburger ">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+    <nav class="navbar fixed-top navbar-expand-lg py-4 navbar-light ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Etienne Devillers</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link test2" aria-current="page" href="#">Profil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link test2" href="#">Expériences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link test2" href="#">Formations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link test2" href="#">Compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link test2" href="#">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
         </div>
     </nav>
+
+
+
+
+
     <!-- Fin NavBar -->
     <!-- Section Accueil -->
-    <div id="containerBackground">
+    <div id="containerBackground ">
         <div id="imageBackground">
-            <h1 class="title text-center  text-white ">Bonjour, je m'apelle <br>Etienne Devillers </h1><br>
+            <h1 class="title text-center  text-white ">Bonjour, je m'appelle <br>Etienne Devillers </h1><br>
             <h1 class="titleJob text-center text-white  ">Web Developer Junior</h1>
             <div class="scrollingMouse">
                 <div class="chevrons">
@@ -52,20 +61,7 @@
                     <div class="chevronDown"></div>
                 </div>
             </div>
-            <!-- <div class="appearingWord">
-                <span>B</span>
-                <span>O</span>
-                <span>N</span>
-                <span>N</span>
-                <span>E</span>
 
-                <span>V</span>
-                <span>I</span>
-                <span>S</span>
-                <span>I</span>
-                <span>T</span>
-                <span>E</span>
-            </div> -->
 
         </div>
     </div>
@@ -73,15 +69,19 @@
     <div class="personnalInformations d-flex justify-content-around align-items-center">
         <div>
             <div class="infos "><img src="assets/img/envelope-fill.svg" class=" mailPicto"
-                    alt="pictogramme qui represente une enveloppe">Devillers.etienne80@gmail.com </div>
+                    alt="pictogramme qui represente une enveloppe"><a class="t-black"
+                    href="mail:Devillers.etienne80@gmail.com">Devillers.etienne80@gmail.com</a> </div>
         </div>
         <div>
             <div class="infos"><img src="assets/img/telephone-fill.svg" class="  phonePicto"
-                    alt="pictogramme qui represente un téléphone"> 0615879407</div>
+                    alt="pictogramme qui represente un téléphone"><a class="t-black"
+                    href="tel:0615879407">0615879407</a> </div>
         </div>
         <div>
             <div class="infos"><img src="assets/img/geo-alt-fill.svg" class=" locationPicto "
-                    alt="pictogramme qui represente une localisation">Amiens, Picardie, France </div>
+                    alt="pictogramme qui represente une localisation"><a class="t-black"
+                    href="https://www.google.fr/maps/place/49%C2%B054'00.0%22N+2%C2%B018'00.0%22E/@49.8932315,2.2944498,15.5z/data=!4m5!3m4!1s0x0:0xb6d3dc3be6bf9fde!8m2!3d49.9!4d2.3"
+                    target="_blank">Amiens, Picardie, France</a> </div>
         </div>
     </div>
     <!-- Fin Section Accueil -->
@@ -90,59 +90,34 @@
     <section class="profil1">
 
         <!--  partie à propos -->
-        <div class="container-fluid  h-100 ">
+        <div class="container-fluid   ">
             <div class="row  ">
-                <!-- <div class="d-none d-md-block col-sm-3 col-md-2 offset-sm-3 offset-md-1 h-100 bg-info"><img
-                        class="myPic" src="assets/img/maPhoto.jpg" alt=""></div> -->
-                <div class=" col-7 offset-3 offset-md-3 col-md-3 h-100 bg-warning d-flex align-items-center align-items-md-end" id="skills">
-                    <h4 class="">Compétences:</h4>
-                    <div class="d-flex align-items-center"><img src="assets/img/html5-icon-13.jpg" alt="" class="picto">
-                        <div class="skillPoint htmlSkillOn"></div>
-                        <div class="skillPoint htmlSkillOn"></div>
-                        <div class="skillPoint htmlSkillOn"></div>
-                        <div class="skillPoint htmlSkillOn"></div>
-                        <div class="skillPoint htmlSkillOff"></div>
-                        <div class="skillPoint htmlSkillOff"></div>
+                <div class="col ">
+                    <div class="profilBox t-white">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6 d-none d-lg-block leftColProfil">
+                                    <div class="photo">
+
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="text-center display-6 mt-1">à propos de moi</div>
+                                    <hr>
+                                    <div class=" mb-3 profilContent">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore velit eius
+                                        officia reiciendis dignissimos, temporibus fugit facilis doloribus quas sint
+                                        necessitatibus maxime aliquid ipsam natus hic praesentium illum quia tenetur
+                                        neque totam cumque? Distinctio earum, perferendis excepturi vero in voluptas!
+                                        Eligendi consectetur necessitatibus consequatur iure soluta quia assumenda
+                                        corporis vero.
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="d-flex align-items-center"><img src="assets/img/logo-css3.png" alt="" class="picto">
-                        <div class="skillPoint cssSkillOn"></div>
-                        <div class="skillPoint cssSkillOn"></div>
-                        <div class="skillPoint cssSkillOn"></div>
-                        <div class="skillPoint cssSkillOn"></div>
-                        <div class="skillPoint cssSkillOn"></div>
-                        <div class="skillPoint cssSkillOn"></div>
-                    </div>
-                    <div class="d-flex align-items-center"><img src="assets/img/js.png" alt="" class="picto">
-                        <div class="skillPoint jsSkillOn"></div>
-                        <div class="skillPoint jsSkillOff"></div>
-                        <div class="skillPoint jsSkillOff"></div>
-                        <div class="skillPoint jsSkillOff"></div>
-                        <div class="skillPoint jsSkillOff"></div>
-                        <div class="skillPoint jsSkillOff"></div>
-                    </div>
-                    <div class="d-flex align-items-center"><img src="assets/img/PHP-Logo-PNG-Image.png" alt=""
-                            class="picto">
-                        <div class="skillPoint phpSkillOn"></div>
-                        <div class="skillPoint phpSkillOn"></div>
-                        <div class="skillPoint phpSkillOff"></div>
-                        <div class="skillPoint phpSkillOff"></div>
-                        <div class="skillPoint phpSkillOff"></div>
-                        <div class="skillPoint phpSkillOff"></div>
-                    </div>
-                    <div class="d-flex align-items-center"><img src="assets/img/1200px-MySQL.svg.png" alt=""
-                            class="picto">
-                        <div class="skillPoint sqlSkillOn"></div>
-                        <div class="skillPoint sqlSkillOn"></div>
-                        <div class="skillPoint sqlSkillOff"></div>
-                        <div class="skillPoint sqlSkillOff"></div>
-                        <div class="skillPoint sqlSkillOff"></div>
-                        <div class="skillPoint sqlSkillOff"></div>
-                    </div>
-                </div>
-                <div class=" col-7 col-md-3 offset-3 offset-md-0 h-100 bg-danger fs-6">Lorem ipsum dolor
-                    sit amet consectetur adipisicing elit. Corporis
-                    dolorum necessitatibus voluptate porro harum aliquam commodi nam similique, voluptas, provident
-                    autem libero sint accusantium fuga quasi obcaecati magnam blanditiis labore. lorem
                 </div>
             </div>
         </div>
@@ -176,10 +151,11 @@
                         <div>Ne pas se limiter à la surface pour mieux comprendre</div>
                     </div>
                     <div class="col-6 col-md-3 ">
-                        <div><img class="picto" src="assets/img/Social_Work.svg" alt="pictogramme d'une main genereuse">
+                        <div><img class="picto" src="assets/img/handshake-angle-solid.svg"
+                                alt="pictogramme d'une main genereuse">
                         </div>
                         <div class="quality">Généreux</div>
-                        <div>transmettre du savoir et aiguiller les autres</div>
+                        <div>Transmettre du savoir et aiguiller les autres</div>
                     </div>
                     <div class="col-6 col-md-3 ">
                         <div><img class="picto" src="assets/img/Muscle.svg" alt="pictogramme d'une loupe"></div>
@@ -224,54 +200,85 @@
     <section class="qualification position-relative">
         <div class="container ">
             <div class="row justif align-items-center">
-                <div class="col-4 text-center fs-1 ">Mes Diplomes </div>
-                <div class="col-6   fs-3 position-relative">Diplome DWWB - En cours
-                    <div class="separateBar3">
+                <div class="col-12 col-md-4 text-center fs-1 ">Mes Diplomes </div>
+                <div class="col-md-6   fs-3 position-relative">Diplome DWWB - En cours
+                    <div class="d-none d-md-block separateBar3">
                     </div>
                 </div>
 
-                <div class="col-2 fs-4">2021 - Amiens</div>
+                <div class="col-md-2 fs-4">2021 - Amiens</div>
 
             </div>
             <div class="row justif align-items-center mt-5">
-                <div class="col-6 offset-4  fs-3 position-relative">Baccalaureat scientifique - Science de l'ingénieur
-                    <div class="separateBar3"></div>
+                <div class="col-md-6 offset-md-4  fs-3 position-relative">Baccalaureat scientifique - Science de
+                    l'ingénieur
+                    <div class="d-none d-md-block separateBar3"></div>
                 </div>
 
-                <div class="col-2 fs-4">2014 - Abbeville </div>
+                <div class="col-md-2 fs-4">2014 - Abbeville </div>
             </div>
         </div>
-        <hr class="separateBar"></hr>
+        <hr class="separateBar">
+        </hr>
     </section>
     <!-- Fin diplome -->
     <!-- Mes outils -->
-    <!-- <section class="tools mt-5">
-                                    <div class="container">
-                                        <div class="row align-items-center">
-                                            <div class="col-4  fs-1 text-center ">
-                                                Mes outils :
-                                            </div>
-                                            <div class="col-8 position-relative">
-                                                <div class="separateBar2"></div>
-                                                <div class="separateBar2 separateBar2right"></div>
-                                                <ul class="toolList d-flex ">
-                                                    <li><img class="tool" id="BootstrapImg" src="assets/img/bootstrap-logo.png" alt=""></li>
-                                                    <li><img class="tool" src="assets/img/Visual_Studio_Code_1.35_icon.svg.png" alt=""></li>
-                                                    <li><img class="tool" src="assets/img/git-bash-logo-B6475E8359-seeklogo.com.png" alt=""></li>
-                                                    <li><img class="tool" src="assets/img/Adobe_XD_CC_icon.svg.png" alt=""></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section> -->
+    <section class="tools mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="skillsBox w-20" >
+                        <div class="text-center display-6 mt-1 t-white">Mes compétences</div>
+
+                        <div class="t-white display-5 mx-3 mb-2" >langages</div>
+                        <ul class="d-flex container-fluid">
+                            <div class="row d-flex align-items-center">
+                                <li class="col-6 col-sm-4 col-md-3 col-lg"><img class="skillsImg " src="assets/img/skills/html500-500.png" alt=""></li>
+                                <li class="col-6 col-sm-4 col-md-3 col-lg"><img class="skillsImg " src="assets/img/skills/css.png" alt=""></li>
+                                <li class="col-6 col-sm-4 col-md-3 col-lg"><img class="skillsImg " src="assets/img/skills/js-logo.png" alt=""></li>
+                                <li class="col-6 col-sm-4 col-md-3 col-lg"><img class="skillsImg " src="assets/img/skills/formation-php-initiation.png"
+                                        alt=""></li>
+                                <li class="col-6 col-sm-4 col-md-3 col-lg"><img class="skillsImg " src="assets/img/skills/MySql.png" alt=""></li>
+                            </div>
+                        </ul>
+
+                        <hr>
+                        <div class="t-white display-5 mx-3 mb-2">framework</div>
+                        <ul class="d-flex container-fluid">
+                            <div class="row d-flex align-items-center">
+                                <li class="col-6 col-sm-4 col-md-3 col-lg"><img class="skillsImg " src="assets/img/skills/Bootstrap.png" alt=""></li>
+                                <li class="col-6 col-sm-4 col-md-3 col-lg"><img class="skillsImg " src="assets/img/skills/codeigniter-icon-512.png" alt=""></li>
+                                <li class="col-6 col-sm-4 col-md-3 col-lg"><img class="skillsImg " src="" alt=""></li>
+                                <li class="col-6 col-sm-4 col-md-3 col-lg"><img class="skillsImg " src=""
+                                        alt=""></li>
+                                <li class="col-6 col-sm-4 col-md-3 col-lg"><img class="skillsImg " src="" alt=""></li>
+                            </div>
+                        </ul>
+                        <hr>
+                        <div class="t-white display-5 mx-3 mb-2">outils</div>
+                        <ul class="d-flex container-fluid">
+                            <div class="row d-flex align-items-center">
+                                <li class="col-6 col-sm-4 col-md-3 col-lg"><img class="skillsImg " src="assets/img/skills/vsc.png" alt=""></li>
+                                <li class="col-6 col-sm-4 col-md-3 col-lg"><img class="skillsImg " src="assets/img/skills/gitBash.png" alt=""></li>
+                                <li class="col-6 col-sm-4 col-md-3 col-lg"><img class="skillsImg " src="assets/img/skills/github500-500.png" alt=""></li>
+                                <li class="col-6 col-sm-4 col-md-3 col-lg"><img class="skillsImg " src="assets/img/skills/phpAdmin.png"
+                                        alt=""></li>
+                                <li class="col-6 col-sm-4 col-md-3 col-lg"><img class="skillsImg " src="assets/img/skills/wordpress.png" alt=""></li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Fin outils -->
 
     <!-- Ce que je sais faire -->
     <section class="abilities">
         <div class="container text-center">
-            <div class="row" >
+            <div class="row">
                 <div class="col-12 fs-1 my-5 position-relative">ce que je sais faire
-                
+
                 </div>
                 <div class="col-4  ">
                     <div><img src="assets/img/teamWork.png" alt="picto équipe" class="picto"></div>
@@ -432,6 +439,9 @@
 
     </section>
     <!-- Fin CGU -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
     <script type="text/javascript" src="assets/js/script.js"></script>
 
 </body>
