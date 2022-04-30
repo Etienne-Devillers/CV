@@ -1,0 +1,13 @@
+h1{
+    background-color: chartreuse;
+    text-align: center;
+    width: 50vw;
+    margin: auto;
+}
+
+p{
+    font-size: 24px;
+    color: red;
+    padding: 0 15px;
+    background-color: aqua;
+}
