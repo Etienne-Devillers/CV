@@ -194,7 +194,7 @@ body {
 
 /*--------------------  Section Navbar */
 
-.navbar{
+.navbar {
     border-bottom: solid 1px rgb(68, 66, 66);
     transition: 500ms;
     padding-top: 0 !important;
@@ -202,12 +202,15 @@ body {
 }
 
 .navbar .navItem {
-    position: relative  ;
-    pointer-events: none;
-    
-
+    position: relative;
+    /* pointer-events: none;     */
 }
-.navbar .navItem::after{
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+
+.navbar .navItem::after {
     position: absolute;
     left: 0;
     bottom: 5px;
@@ -218,7 +221,7 @@ body {
     transition: 0.3s;
 }
 
-.navbar .navItem:hover::after{
+.navbar .navItem:hover::after {
     width: 100%;
 }
 
@@ -229,7 +232,7 @@ body {
 
 }
 
-.nav-item{
+.nav-item {
     cursor: pointer;
 }
 
@@ -255,7 +258,8 @@ body {
     z-index: -2;
 
 }
-#imageBackground:after{
+
+#imageBackground:after {
     width: 100%;
     height: 100%;
     background-color: #00000098;
@@ -290,11 +294,11 @@ body {
     font-size: 1em;
 }
 
-.t-white{
+.t-white {
     color: white;
 }
 
-.t-black{
+.t-black {
     color: black;
 }
 
@@ -320,31 +324,33 @@ body {
 
 /* Section profil */
 
-.leftColProfil{
-    
+.leftColProfil {
+
     border-right: solid 1px rgb(223, 221, 221);
 }
-.photoProfil{
+
+.photoProfil {
     width: 90%;
     height: 400px;
-    margin: 0 auto;   
+    margin: 0 auto;
 }
-.photoProfil img{
+
+.photoProfil img {
     object-fit: contain;
     width: 100%;
     height: 100%;
 }
 
-.profilBox{
-    
+.profilBox {
+
     width: 70%;
-    margin : 5em auto;
+    margin: 5em auto;
     border-radius: 5px;
     background-color: rgb(61, 58, 58);
     box-shadow: 5px 10px 30px black;
 }
 
-.profilContent{
+.profilContent {
     font-size: 20px;
 }
 
@@ -533,28 +539,72 @@ body {
     /* Unicode character for "minus" sign (-) */
 }
 
-.separateBar{
+.separateBar {
     width: 80%;
     margin: 5em auto;
 }
-.separateBarSkills{
+
+.separateBarSkills {
     width: 80%;
-    margin: 2em auto;
+    margin: 1em auto;
 }
+
 /*--------------------------- SKILLS ----------------------- */
 
-.skillsBox{
-    
-    margin:  auto;
+.skillsBox {
+
+    margin: auto;
     border-radius: 5px;
     background-color: rgb(61, 58, 58);
     box-shadow: 5px 10px 30px black;
-    width: 80%;
+    width: 70%;
 }
 
 .skillsImg {
     width: 60%;
+
 }
+
+.skillList li {
+    position: relative;
+}
+
+.skillList li .tooltipSkill {
+    position: absolute;
+    z-index: 10;
+    padding: 1px 3px;
+    min-width: 60px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    background-color: grey;
+    top: 10%;
+    left: 15%;
+    
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.skillList li:hover .tooltipSkill {
+    opacity: 1;
+    top: -35px;
+}
+
+.skillList li .tooltipSkill::before {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    left: 50%;
+    bottom: -5px;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    content: '';
+    background-color: grey;
+}
+
+
 
 /*  Contactez moi */
 
@@ -797,4 +847,3 @@ html,
     background-color: #5B6DAF;
     color: #ffffff;
 }
-

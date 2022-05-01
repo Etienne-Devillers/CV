@@ -1,10 +1,11 @@
 // ------------------------------------ navBar
 
 let navLinks = document.querySelectorAll('.nav-item');
+let navItem = document.querySelectorAll('.nav-link');
 
-function navBarFunction() {
-  console.log(window.scrollY);
-  console.log(document.documentElement.scrolltop);
+function navBarFunction() { 
+  // console.log(window.scrollY);
+
   if (window.scrollY > 40 || document.documentElement.scrolltop > 40) {
     document.querySelector('.navbar').classList.add('bg-light');
     document.querySelector('.scrollingMouse').style.opacity = 0;
@@ -24,56 +25,71 @@ function navBarFunction() {
 }
 navBarFunction();
 window.onscroll = function () {
-  navBarFunction()
+  navBarFunction(),
+  navItemRecolor()
 };
 
 //--------------------------------------- Variable de position pour les ancres
 
 const position = 
-  [600, //profil
-   1260, // experience
+  [560, //profil
+   1160, // experience
    1760, // diploma
-   2340, //skills
-   3570, //portfolio
+   2270, //skills
+   3470, //portfolio
    4120] //contact
 ;
 
 for (let i = 0; i < navLinks.length; i++) {
   navLinks[i].addEventListener('click', () => {
-    window.scrollTo(0, position[i]) 
+    window.scrollTo(0, position[i]) ;
   });
 }
 
 function resetNavItemRecolor(){
-  navLinks.forEach(element => {
-    element.style.color = 'black ';
-    element.style.backgroundColor = '#f7f7f7';
-  });
+
+  for (let index = 0; index < navLinks.length; index++) {
+      navLinks[index].style.backgroundColor = ''; //#f7f7f7
+      navItem[index].style.color = "black";
+  }
 }
 
 
-resetNavItemRecolor()
-// function navItemRecolor() {
+function navItemRecolor() {
 
-//   if (window.scrollY < position.profil) {
-//     console.log('top');
-//   }
-//   else if(window.scrollY > position.experience) {
-//     console.log('profil');
-//   }
-//   else if(window.scrollY > position.diploma) {
-//     console.log('experiences');
-//   }
-//   else if(window.scrollY > position.skills) {
-//     console.log('formations');
-//   }
-//   else if(window.scrollY > position.portfolio) {
-//     console.log('competences');
-//   }
-//   else if(window.scrollY > position.contact) {
-//     console.log('portfolio');
-//   }
-// }
+    if (window.scrollY > position[0] && window.scrollY < position[1]) {
+      resetNavItemRecolor(0);
+      
+      navItem[0].style.color = "white";
+      navLinks[0].style.backgroundColor = 'black';
+    }
+    else if(window.scrollY > position[1] && window.scrollY < position[2]) {
+      resetNavItemRecolor(1);
+      navItem[1].style.color = "white";
+      navLinks[1].style.backgroundColor = 'black';
+    }
+    else if(window.scrollY > position[2] && window.scrollY < position[3]) {
+      resetNavItemRecolor(2);
+      navItem[2].style.color = "white";
+      navLinks[2].style.backgroundColor = 'black';
+    }
+    else if(window.scrollY > position[3] && window.scrollY < position[4]) {
+      resetNavItemRecolor(3);
+      navItem[3].style.color = "white";
+      navLinks[3].style.backgroundColor = 'black';    }
+    else if(window.scrollY > position[4] && window.scrollY < position[5]) {
+      resetNavItemRecolor(4);
+      navItem[4].style.color = "white";
+      navLinks[4].style.backgroundColor = 'black';
+    }
+    else if(window.scrollY > position[5]) {
+      resetNavItemRecolor(5);
+      navItem[5].style.color = "white";
+      navLinks[5].style.backgroundColor = 'black';   } else {
+        resetNavItemRecolor();
+      }
+}
+
 //Changement de couleur du bg des liens.
 
 
