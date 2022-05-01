@@ -25,19 +25,16 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link navItem" aria-current="page" href="#">Profil</a>
+                        <a class="nav-link navItem" aria-current="page" href="#profil">Profil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link navItem" href="#">Expériences</a>
+                        <a class="nav-link navItem" href="#experiences">Expériences</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link navItem" href="#">Formations</a>
+                        <a class="nav-link navItem" href="#skills">Compétences</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link navItem" href="#">Compétences</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navItem" href="#">Portfolio</a>
+                        <a class="nav-link navItem" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link navItem" href="#">Contact</a>
@@ -69,20 +66,20 @@
         </div>
     </div>
 
-    <div class="personnalInformations d-flex justify-content-around align-items-center">
+    <div id="profil"  class="personnalInformations d-flex justify-content-around align-items-center">
         <div>
             <div class="infos "><img src="assets/img/envelope-fill.svg" class=" mailPicto"
-                    alt="pictogramme qui represente une enveloppe"><a class="t-black"
+                    alt="pictogramme qui represente une enveloppe"><a class="t-black pictoTextHome"
                     href="mailto:Devillers.etienne80@gmail.com">Devillers.etienne80@gmail.com</a> </div>
         </div>
         <div>
             <div class="infos"><img src="assets/img/telephone-fill.svg" class="  phonePicto"
-                    alt="pictogramme qui represente un téléphone"><a class="t-black" href="tel:0615879407">06 15 87 94
+                    alt="pictogramme qui represente un téléphone"><a class="t-black pictoTextHome" href="tel:0615879407">06 15 87 94
                     07</a> </div>
         </div>
         <div>
             <div class="infos"><img src="assets/img/geo-alt-fill.svg" class=" locationPicto "
-                    alt="pictogramme qui represente une localisation"><a class="t-black"
+                    alt="pictogramme qui represente une localisation"><a class="t-black pictoTextHome"
                     href="https://www.google.fr/maps/place/49%C2%B054'00.0%22N+2%C2%B018'00.0%22E/@49.8932315,2.2944498,15.5z/data=!4m5!3m4!1s0x0:0xb6d3dc3be6bf9fde!8m2!3d49.9!4d2.3"
                     target="_blank">Amiens, Picardie, France</a> </div>
         </div>
@@ -90,7 +87,7 @@
     <!-- Fin Section Accueil -->
 
     <!-- Section Profil  -->
-    <section class="profil1">
+    <section class="profil1" >
 
         <!--  partie à propos -->
         <div class="container-fluid   ">
@@ -139,7 +136,7 @@
         <div id="polygonBottom"></div>
 
         <!--  Mes qualités -->
-        <section class="qualité">
+        <section class="qualité" id="experiences">
 
             <div class="container  text-center text-white">
                 <div class="row pt-7">
@@ -221,12 +218,12 @@
                 <div class="col-md-2 fs-4">2014 - Abbeville </div>
             </div>
         </div>
-        <hr class="separateBar">
+        <hr class="separateBar" id="skills">
         </hr>
     </section>
     <!-- Fin diplome -->
     <!-- Mes outils -->
-    <section class="tools mt-5">
+    <section class="tools mt-5" >
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -236,23 +233,23 @@
                         <div class="t-white display-5 mx-3 mb-2">Langages</div>
                         <ul class="d-flex container-fluid">
                             <div class="row d-flex align-items-center skillList">
-                                <li class="col-6 col-sm-4 col-md-3 col-lg"><img class="skillsImg "
+                                <li class="col-6 col-sm-4 col-md-3 col-lg py-2 py-sm-0"><img class="skillsImg "
                                         src="assets/img/skills/html500-500.png" alt="">
                                     <div class="tooltipSkill">html</div>
                                 </li>
-                                <li class="col-6 col-sm-4 col-md-3 col-lg"><img class="skillsImg "
+                                <li class="col-6 col-sm-4 col-md-3 col-lg py-2 py-sm-0"><img class="skillsImg "
                                         src="assets/img/skills/css.png" alt="">
                                     <div class="tooltipSkill">css</div>
                                 </li>
-                                <li class="col-6 col-sm-4 col-md-3 col-lg"><img class="skillsImg "
+                                <li class="col-6 col-sm-4 col-md-3 col-lg py-2 py-sm-0"><img class="skillsImg "
                                         src="assets/img/skills/js-logo.png" alt="">
                                     <div class="tooltipSkill">Javascript</div>
                                 </li>
-                                <li class="col-6 col-sm-4 col-md-3 col-lg"><img class="skillsImg "
+                                <li class="col-6 col-sm-4 col-md-3 col-lg py-2 py-sm-0"><img class="skillsImg "
                                         src="assets/img/skills/formation-php-initiation.png" alt="">
                                     <div class="tooltipSkill">Php</div>
                                 </li>
-                                <li class="col-6 col-sm-4 col-md-3 col-lg"><img class="skillsImg "
+                                <li class="col-6 col-sm-4 col-md-3 col-lg py-2 py-sm-0"><img class="skillsImg "
                                         src="assets/img/skills/MySql.png" alt="">
                                     <div class="tooltipSkill">MySql</div>
                                 </li>
@@ -263,11 +260,11 @@
                         <div class="t-white display-5 mx-3 mb-2">Framework</div>
                         <ul class="d-flex container-fluid">
                             <div class="row d-flex align-items-center skillList">
-                                <li class="col-6 col-sm-4 col-md-3 col-lg"><img class="skillsImg "
+                                <li class="col-6 col-sm-4 col-md-3 col-lg py-2 py-sm-0"><img class="skillsImg "
                                         src="assets/img/skills/Bootstrap.png" alt="">
                                     <div class="tooltipSkill">Boostrap</div>
                                 </li>
-                                <li class="col-6 col-sm-4 col-md-3 col-lg"><img class="skillsImg "
+                                <li class="col-6 col-sm-4 col-md-3 col-lg py-2 py-sm-0"><img class="skillsImg "
                                         src="assets/img/skills/codeigniter-icon-512.png" alt="">
                                     <div class="tooltipSkill">CodeIgniter</div>
                                 </li>
@@ -286,23 +283,23 @@
                         <div class="t-white display-5 mx-3 mb-2">Outils</div>
                         <ul class="d-flex container-fluid">
                             <div class="row d-flex align-items-center skillList">
-                                <li class="col-6 col-sm-4 col-md-3 col-lg"><img class="skillsImg "
+                                <li class="col-6 col-sm-4 col-md-3 col-lg py-2 py-sm-0"><img class="skillsImg "
                                         src="assets/img/skills/vsc.png" alt="">
                                     <div class="tooltipSkill">Visual Studio Code</div>
                                 </li>
-                                <li class="col-6 col-sm-4 col-md-3 col-lg"><img class="skillsImg "
+                                <li class="col-6 col-sm-4 col-md-3 col-lg  py-2 py-sm-0"><img class="skillsImg "
                                         src="assets/img/skills/gitBash.png" alt="">
                                     <div class="tooltipSkill">GitBash</div>
                                 </li>
-                                <li class="col-6 col-sm-4 col-md-3 col-lg"><img class="skillsImg "
+                                <li class="col-6 col-sm-4 col-md-3 col-lg py-2 py-sm-0"><img class="skillsImg "
                                         src="assets/img/skills/github500-500.png" alt="">
                                     <div class="tooltipSkill">GitHub</div>
                                 </li>
-                                <li class="col-6 col-sm-4 col-md-3 col-lg"><img class="skillsImg "
+                                <li class="col-6 col-sm-4 col-md-3 col-lg py-2 py-sm-0"><img class="skillsImg "
                                         src="assets/img/skills/phpAdmin.png" alt="">
                                     <div class="tooltipSkill">PhpMyAdmin</div>
                                 </li>
-                                <li class="col-6 col-sm-4 col-md-3 col-lg"><img class="skillsImg "
+                                <li class="col-6 col-sm-4 col-md-3 col-lg py-2 py-sm-0"><img class="skillsImg "
                                         src="assets/img/skills/wordpress.png" alt="">
                                     <div class="tooltipSkill">Worpdress</div>
                                 </li>
@@ -322,18 +319,18 @@
                 <div class="col-12 fs-1 my-5 position-relative">Ce que je sais faire
 
                 </div>
-                <div class="col-4  ">
+                <div class="col-12 col-sm-4  ">
                     <div><img src="assets/img/teamWork.png" alt="picto équipe" class="picto"></div>
                     <div class="fs-1 ">Travailler en équipe</div>
                     <div class="">Ecouter et s'adapter aux demandes et aux besoins afin de mener à bien les projets de
                         groupe.</div>
                 </div>
-                <div class="col-4 align-items-center">
+                <div class="col-12 col-sm-4 align-items-center">
                     <div><img src="assets/img/html.svg" alt="picto" class="picto"></div>
                     <div class="fs-1 ">POO</div>
-                    <div class="">Programmation orienté objet</div>
+                    <div class="">Aptitude à la conception et programmation orientée objet</div>
                 </div>
-                <div class="col-4 ">
+                <div class="col-12 col-sm-4 ">
                     <div><img src="assets/img/sizing.png" alt="picto" class="picto"></div>
                     <div class="fs-1 ">Responsive Design</div>
                     <div class="">Adapter le contenu au contenant, responsive design sur tous les périphériques.</div>
@@ -343,31 +340,14 @@
     </section>
     <!-- Fin de ce que je sais faire -->
 
-    <!-- Disponibilités -->
-    <div class="backgroundImgFloating2">
-        <div id="polygonTop2"></div>
-        <div id="polygonBottom2"></div>
+    <hr class="separateBar" id="portoflio">
 
-        <section class="freeAgent">
-            <div class="container pt-5">
-                <div class="row  align-items-center text-white">
-                    <div class="col-3 offset-1 fs-1">En ce moment </div>
-                    <div class="col-6 offset-2 text-center fs-2 pt-5 position-relative">
-                        <div>Je suis disponible</div>
-                        <div>N'hésitez pas à me contacter</div>
-
-                    </div>
-                </div>
-            </div>
-    </div>
-    </section>
-    <!-- Fin Disponibilités -->
     <!-- Portfolio -->
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-12 fs-1">Portfolio</div>
-                <div class="col-sm-10 col-md-6 col-lg-4">
+                <div class="offset-1 offset-md-0 col-10 col-sm-10 col-md-6 col-lg-4">
                     <div class="portfolioItem  ">
                         <div class="thumbnail"></div>
                         <div class="text-center fs-5">menu principal de BF 2042</div>
@@ -378,7 +358,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-10 col-md-6 col-lg-4 ">
+                <div class="offset-1 offset-md-0 col-10 col-sm-10 col-md-6 col-lg-4 ">
                     <div class="portfolioItem  ">
                         <div class="thumbnail2"></div>
                         <div class="text-center fs-5">Evenement bourse High Tech</div>
@@ -389,19 +369,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-10 col-md-6 col-lg-4 ">
+                <div class="offset-1 offset-md-0 col-10 col-sm-10 col-md-6 col-lg-4 ">
                     <div class="portfolioItem  ">
                     </div>
                 </div>
-                <div class="col-sm-10 col-md-6 col-lg-4 ">
+                <div class="offset-1 offset-md-0 col-10 col-sm-10 col-md-6 col-lg-4 ">
                     <div class="portfolioItem  ">
                     </div>
                 </div>
-                <div class="col-sm-10 col-md-6 col-lg-4 ">
+                <div class="offset-1 offset-md-0 col-10 col-sm-10 col-md-6 col-lg-4 ">
                     <div class="portfolioItem  ">
                     </div>
                 </div>
-                <div class="col-sm-10 col-md-6 col-lg-4 ">
+                <div class="offset-1 offset-md-0 col-10 col-sm-10 col-md-6 col-lg-4 ">
                     <div class="portfolioItem  ">
                     </div>
                 </div>
@@ -413,42 +393,8 @@
     <section class="contact">
         <div class="backgroundImgFloating3">
 
-            <div class="container ">
-                <div class="row">
-                    <div class="col mt-5 fs-2">
-                        N'hésitez pas à me contacter pour toutes informations ou prise de rendez vous
-                    </div>
-
-                    <div class="col">
-                        <form action="" class="formulaire mb-5">
-                            <div>
-                                <label for="lastname"></label>
-                                <input type="text" class="form-control" id="lastname" placeholder="Nom" required>
-                            </div>
-                            <div>
-                                <label for="firstname"></label>
-                                <input type="text" class="form-control" id="firstname" placeholder="Prénom" required>
-                            </div>
-                            <div>
-                                <label for="email"></label>
-                                <input type="email" class="form-control" id="email" placeholder="Adresse mail" required>
-                            </div>
-                            <div>
-                                <label for="subject"></label>
-                                <input type="text" class="form-control" id="subject" placeholder="Sujet" required>
-                            </div>
-                            <div>
-                                <label for="message"></label>
-                                <textarea type="text" class="form-control" placeholder="Votre message" rows=8
-                                    id="message" required></textarea>
-                            </div>
-                            <input type="submit" class="btn bg-primary mt-3">
-                        </form>
-                    </div>
-
-                </div>
-            </div>
-        </div>
+            <div class="citation text-center py-5">"Errare humanum est, perseverare diabolicum"</div>
+        
         </div>
     </section>
     <!-- Fin Contact -->
@@ -468,22 +414,26 @@
                 <span><i class="fab fa-github"></i></span>
             </div>
             <div class="icon discord"><img class="discordLogo" src="assets/img/Discord-logo.png" alt="">
-                <div class="tooltip">Discord</div>
+                <div class="tooltip">Jibille#6723</div>
                 <span><i class="fab fa-discord"></i></span>
             </div>
         </div>
+        
     </section>
+
     <!-- Fin Lien Externe -->
 
     <!-- CGU -->
-    <section class="CGU">
-
-    </section>
+    <footer>
+        <div>Etienne DEVILLERS - 2022</div>
+        <div>Site en cours de création.</div>
+    </footer>
     <!-- Fin CGU -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
     <script type="text/javascript" src="assets/js/script.js"></script>
+
 
 </body>
 

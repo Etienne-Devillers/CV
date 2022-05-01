@@ -32,19 +32,20 @@ window.onscroll = function () {
 //--------------------------------------- Variable de position pour les ancres
 
 const position = 
-  [560, //profil
-   1160, // experience
-   1760, // diploma
-   2270, //skills
-   3470, //portfolio
-   4120] //contact
-;
+  [((document.querySelector('#profil').getBoundingClientRect().top + window.scrollY) -1) , //profil
+  (document.querySelector('#experiences').getBoundingClientRect().top + window.scrollY -1 ) , // experience
+   (document.querySelector('#skills').getBoundingClientRect().top + window.scrollY -1), //skills
+   ((document.querySelector('#portfolio').getBoundingClientRect().top + window.scrollY) -1) , //portfolio
+   //document.querySelector('#contact').getBoundingClientRect().top //contact
+  ] ;
 
-for (let i = 0; i < navLinks.length; i++) {
-  navLinks[i].addEventListener('click', () => {
-    window.scrollTo(0, position[i]) ;
-  });
-}
+  console.log(position[3]);
+
+// for (let i = 0; i < navLinks.length; i++) {
+//   navLinks[i].addEventListener('click', () => {
+//     window.scrollTo(0, position[i]) ;
+//   });
+// }
 
 function resetNavItemRecolor(){
 
@@ -57,39 +58,34 @@ function resetNavItemRecolor(){
 
 function navItemRecolor() {
 
-    if (window.scrollY > position[0] && window.scrollY < position[1]) {
+    if (window.scrollY >= position[0] && window.scrollY < position[1]) {
       resetNavItemRecolor(0);
       
       navItem[0].style.color = "white";
       navLinks[0].style.backgroundColor = 'black';
     }
-    else if(window.scrollY > position[1] && window.scrollY < position[2]) {
+    else if(window.scrollY >= position[1] && window.scrollY < position[2]) {
       resetNavItemRecolor(1);
       navItem[1].style.color = "white";
       navLinks[1].style.backgroundColor = 'black';
     }
-    else if(window.scrollY > position[2] && window.scrollY < position[3]) {
+    else if(window.scrollY >= position[2] && window.scrollY < position[3]) {
       resetNavItemRecolor(2);
       navItem[2].style.color = "white";
       navLinks[2].style.backgroundColor = 'black';
     }
-    else if(window.scrollY > position[3] && window.scrollY < position[4]) {
+    else if(window.scrollY >= position[3]) {
       resetNavItemRecolor(3);
       navItem[3].style.color = "white";
       navLinks[3].style.backgroundColor = 'black';    }
-    else if(window.scrollY > position[4] && window.scrollY < position[5]) {
+    else if(window.scrollY >= position[4] && window.scrollY < position[5]) {
       resetNavItemRecolor(4);
       navItem[4].style.color = "white";
       navLinks[4].style.backgroundColor = 'black';
     }
-    else if(window.scrollY > position[5]) {
-      resetNavItemRecolor(5);
-      navItem[5].style.color = "white";
-      navLinks[5].style.backgroundColor = 'black';   } else {
-        resetNavItemRecolor();
-      }
 }
 
+console.log(document.querySelector('#skills').getBoundingClientRect().top);
 //Changement de couleur du bg des liens.
 
 
@@ -129,3 +125,13 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+
+//Bouton de redirection github linkedin etc
+
+document.querySelector('.linkedin').addEventListener('click', () =>{
+  window.open('https://www.linkedin.com/in/etienne-devillers-913415239/');
+})
+document.querySelector('.github').addEventListener('click', () =>{
+  window.open('https://github.com/Etienne-Devillers');
+})

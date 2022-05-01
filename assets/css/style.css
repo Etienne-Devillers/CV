@@ -278,10 +278,30 @@ body {
     font-size: 6em;
 }
 
+@media (max-width: 600px)
+{
+
+    .title {
+        font-size: 2em;
+        padding-top: 3em;
+    }
+    
+    .titleJob {
+        font-size: 4em;
+    }
+}
+
 /* -------------------- Fin Section Background image */
 .personnalInformations {
     height: 15vh;
     box-shadow: 0 0 4px rgb(0 0 0 / 20%);
+}
+
+@media (max-width: 892px)
+{
+    .personnalInformations{
+        flex-direction: column;
+    }
 }
 
 .test {
@@ -317,6 +337,10 @@ body {
 
 .locationPicto {
     filter: invert(11%) sepia(87%) saturate(5608%) hue-rotate(358deg) brightness(109%) contrast(96%);
+}
+
+.pictoTextHome {
+    font-size: 24px;
 }
 
 
@@ -380,7 +404,7 @@ body {
 .backgroundImgFloating {
     background: url(../img/Dark-grey-background.jpg);
     width: 100vw;
-    min-height: 90vh;
+    min-height: 50vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -392,8 +416,9 @@ body {
 /*  fin Section background image flottante */
 
 .picto {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
+    
 }
 
 .quality {
@@ -458,10 +483,10 @@ body {
 
 
 .backgroundImgFloating3 {
-    background-color: grey;
+    background-color: rgb(61, 58, 58);
     clip-path: polygon(50% 0, 100% 0%, 100% 85%, 50% 100%, 0 85%, 0 0%);
     width: 100vw;
-    min-height: 50vh;
+    
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -469,15 +494,14 @@ body {
     margin-top: 15vh;
 }
 
-
-
-
-.lastJob {
-    min-height: 70vh;
+.citation{
+    font-size: 36px;
+    font-style: italic;
+    color: white;
 }
-
-
-
+.lastJob {
+    min-height: 60vh;
+}
 
 /* ---------------------Mes diplomes---------------- */
 
@@ -583,7 +607,7 @@ body {
     background-color: grey;
     top: 10%;
     left: 15%;
-    
+
     transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
@@ -619,8 +643,12 @@ body {
     height: 25vh;
     border: solid 1px black;
     margin-top: 1em;
+    margin: 0.5em auto;
     position: relative;
     border-radius: 10px;
+    background-color: rgb(61, 58, 58);
+    color: white;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 
 }
 
@@ -703,34 +731,6 @@ body {
 
 
 
-.formulaire {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-
-}
-
-#lastname {
-    width: 16rem;
-}
-
-#firstname {
-    width: 16rem;
-    margin-left: 3rem;
-}
-
-#email {
-    width: 35rem;
-}
-
-#subject {
-    width: 35rem;
-}
-
-#message {
-    width: 35rem;
-}
 
 /* ---------------Lien Externe-------------- */
 *:focus,
@@ -744,6 +744,7 @@ html,
 .externalLinks {
     position: relative;
     width: 100vw;
+    margin-bottom: 70px;
 }
 
 .wrapper {
@@ -846,4 +847,10 @@ html,
 .wrapper .discord:hover .tooltip::before {
     background-color: #5B6DAF;
     color: #ffffff;
+}
+
+footer {
+    background-color: rgb(61, 58, 58);
+    color: white;
+    text-align: center;
 }
