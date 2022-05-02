@@ -41,7 +41,7 @@ display: block;
     position: relative;
     transition: 0.5s;
     margin-top: 2em;
-    margin-left: calc(50% - 35px);
+    margin: 0 auto;
 }
 @media (max-width: 800px) {
     .scrollingMouse{
@@ -352,7 +352,6 @@ display: block;
 .picto {
     width: 50px;
     height: 50px;
-
 }
 
 .quality {
@@ -452,6 +451,10 @@ display: block;
     right: 1em;
     bottom: 10%;
 
+}
+.schoolName{
+    font-size: 18px;
+    font-style: italic;
 }
 
 /* Ancien job */
