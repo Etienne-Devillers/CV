@@ -33,7 +33,7 @@ body {
 }
 
 .scrollingMouse {
-
+display: block;
     width: 40px;
     height: 70px;
     border: solid 2px #fff;
@@ -43,7 +43,11 @@ body {
     margin-top: 2em;
     margin-left: calc(50% - 35px);
 }
-
+@media (max-width: 800px) {
+    .scrollingMouse{
+        display: none;
+    }
+}
 .scrollingMouse:after {
     position: absolute;
     height: 20px;
@@ -118,79 +122,6 @@ body {
 }
 
 
-.appearingWord {
-    color: #fff;
-    font-size: 0;
-    line-height: 1.5;
-    position: absolute;
-    left: calc(50% - 20rem);
-    bottom: 20%;
-}
-
-.appearingWord span {
-    font-size: 5rem;
-    display: inline-block;
-    animation: move 5s ease-in-out infinite;
-    opacity: 0;
-}
-
-@keyframes move {
-    0% {
-        opacity: 0;
-        transform: translate(-30%, 0);
-    }
-
-    50% {
-        opacity: 1;
-        text-shadow: 10px 15px 5px rgb(0, 0, 0);
-    }
-
-    100% {
-        opacity: 0;
-        transform: translate(30%, 0);
-    }
-}
-
-.appearingWord span:nth-child(2) {
-    animation-delay: 0.2s;
-}
-
-.appearingWord span:nth-child(3) {
-    animation-delay: 0.4s;
-}
-
-.appearingWord span:nth-child(4) {
-    animation-delay: 0.6s;
-}
-
-.appearingWord span:nth-child(5) {
-    animation-delay: 0.8s;
-}
-
-.appearingWord span:nth-child(6) {
-    animation-delay: 1s;
-    margin-left: 1em;
-}
-
-.appearingWord span:nth-child(7) {
-    animation-delay: 1.2s;
-}
-
-.appearingWord span:nth-child(8) {
-    animation-delay: 1.4s;
-}
-
-.appearingWord span:nth-child(9) {
-    animation-delay: 1.6s;
-}
-
-.appearingWord span:nth-child(10) {
-    animation-delay: 1.8s;
-}
-
-.appearingWord span:nth-child(11) {
-    animation-delay: 2s;
-}
 
 /*--------------------  Section Navbar */
 
@@ -281,12 +212,12 @@ body {
 @media (max-width: 600px) {
 
     .title {
-        font-size: 2em;
-        padding-top: 3em;
+        font-size: 1.5em;
+        padding-top:3em;
     }
 
     .titleJob {
-        font-size: 4em;
+        font-size: 3em;
     }
 }
 
@@ -376,6 +307,11 @@ body {
     font-size: 20px;
 }
 
+@media (max-width: 700px) {
+    .profilContent{
+        font-size: 15px;
+    }
+}
 
 /*  Section background image flottante */
 
@@ -705,7 +641,7 @@ body {
 
 
 .thumbnail2 {
-    background-image: url(../img/Bourse.png);
+    background-image: url(../img/Shifumi.png);
 }
 
 .usedTechno2 {
@@ -715,32 +651,111 @@ body {
     bottom: 0;
 }
 
+.jsTechno2 {
+    width: 75%;
+    height: 100;
+    background-color:#F1E05A;
+    border-radius: 0 0 0 8px;
+
+}
+
 .htmlTechno2 {
-    width: 46%;
+    width: 10%;
+    height: 100;
+    background-color: #E34C26;
+    
+
+}
+
+.cssTechno2 {
+    width: 15%;
+    background-color: #563D7C;
+    border-radius: 0 0 8px 0;
+
+}
+
+
+
+
+.thumbnail3{
+    background-image: url(../img/MaisonsVoyage.jpg);
+    
+}
+
+.htmlTechno3 {
+    width: 40%;
     height: 100;
     background-color: #E34C26;
     border-radius: 0 0 0 8px;
 
 }
 
-.cssTechno2 {
-    width: 50%;
+.cssTechno3 {
+    width: 60%;
     background-color: #563D7C;
-
-
-}
-
-.jsTechno2 {
-    width: 4%;
-    background-color: #F1E05A;
     border-radius: 0 0 8px 0;
-
 }
 
 
-.thumbnail3{
-    background-image: url(../img/stayTuned.jpg);
-    background-position: 50%;
+.thumbnail4{
+    background-image: url(../img/Calendrier.jpg);
+}
+
+.phpTechno4 {
+    width: 81%;
+    height: 100;
+    background-color: #4F5D95;
+    border-radius: 0 0 0 8px;
+
+}
+
+.cssTechno4 {
+    width: 19%;
+    background-color: #563D7C;
+    border-radius: 0 0 8px 0;
+}
+
+.thumbnail5{
+    background-image: url(../img/Hopital.jpg);
+}
+
+.phpTechno5 {
+    width: 85%;
+    height: 100;
+    background-color: #4F5D95;
+    border-radius: 0 0 0 8px;
+
+}
+
+.cssTechno5 {
+    width: 15%;
+    background-color: #563D7C;
+    border-radius: 0 0 8px 0;
+}
+
+.thumbnail6{
+    background-image: url(../img/colyseum.jpg);
+}
+
+.jsTechno6 {
+    width: 50%;
+    background-color: #F1E05A;
+    border-radius: 0 0 0 8px ;
+
+}
+
+.phpTechno6 {
+    width: 34%;
+    height: 100;
+    background-color: #4F5D95;
+    
+
+}
+
+.cssTechno6 {
+    width: 16%;
+    background-color: #563D7C;
+    border-radius: 0 0 8px 0;
 }
 
 /* -------------------Rubrique contact ---------------- */

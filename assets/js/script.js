@@ -4,23 +4,31 @@ let navLinks = document.querySelectorAll('.nav-item');
 let navItem = document.querySelectorAll('.nav-link');
 
 function navBarFunction() { 
-  // console.log(window.scrollY);
+  
+  let width  = window.innerWidth || document.documentElement.clientWidth || 
+  document.body.clientWidth;
+  if (width>992){
+    if (window.scrollY > 40 || document.documentElement.scrolltop > 40) {
+      document.querySelector('.navbar').classList.add('bg-light');
+      document.querySelector('.scrollingMouse').style.opacity = 0;
+      navLinks.forEach(element => {
+        element.style.padding = '0.3rem 15px';
+      });
 
-  if (window.scrollY > 40 || document.documentElement.scrolltop > 40) {
+    } else {
+
+      document.querySelector('.navbar').classList.remove('bg-light');
+      document.querySelector('.scrollingMouse').style.opacity = 1;
+      navLinks.forEach(element => {
+        element.style.padding = '1.5rem 15px';
+      });;
+
+    }
+  } else {
     document.querySelector('.navbar').classList.add('bg-light');
-    document.querySelector('.scrollingMouse').style.opacity = 0;
     navLinks.forEach(element => {
       element.style.padding = '0.3rem 15px';
     });
-
-  } else {
-
-    document.querySelector('.navbar').classList.remove('bg-light');
-    document.querySelector('.scrollingMouse').style.opacity = 1;
-    navLinks.forEach(element => {
-      element.style.padding = '1.5rem 15px';
-    });;
-
   }
 }
 navBarFunction();
@@ -39,7 +47,7 @@ const position =
    //document.querySelector('#contact').getBoundingClientRect().top //contact
   ] ;
 
-  console.log(position[3]);
+ 
 
 // for (let i = 0; i < navLinks.length; i++) {
 //   navLinks[i].addEventListener('click', () => {
@@ -85,7 +93,7 @@ function navItemRecolor() {
     }
 }
 
-console.log(document.querySelector('#skills').getBoundingClientRect().top);
+
 //Changement de couleur du bg des liens.
 
 
