@@ -479,7 +479,7 @@ display: block;
 }
 
 /* Style the collapsible content. Note: hidden by default */
-.content {
+.collapsible~.content {
     padding: 0 18px;
     display: none;
     overflow: hidden;
@@ -887,4 +887,130 @@ footer {
     background-color: rgb(61, 58, 58);
     color: white;
     text-align: center;
+}
+
+
+
+.languageBar{
+    width: 95%;
+    height: 7px;
+    margin: auto;
+    border-radius: 5px;
+    margin: 5px auto;
+    background-color: blue;
+    display: flex;
+    overflow: hidden;
+}
+.languageRepartition{
+    list-style: none;
+    padding: 0;
+    display: none;
+    transition: 0.3s ease-in-out;
+    margin-bottom: 0;
+}
+
+.languagePercent{
+    color: rgb(205, 200, 200);
+}
+.dot{
+    width: 10px;
+    height: 10px;    
+    border-radius: 5px;
+}
+
+.htmlColor{
+    background-color: #e34c26;
+}
+
+.cssColor{
+    background-color: #563d7c;
+}
+.phpColor{
+    background-color: #4F5D95;
+    }
+
+.html1{
+    width: 37.4%;
+}
+
+.css1{
+    width: 62.6%;
+}
+
+.html2{
+    width: 65.7%;
+}
+.css2{
+    width: 34.3%;
+}
+
+.php3{
+    width: 84.8%;
+}
+
+.css3{
+    width:15.2%;
+}  
+
+.container .card
+{
+    background-color: rgb(61, 58, 58);
+    max-width: 300px;
+    height: 215px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+}
+.container .card:hover
+{
+    height: 400px;
+}
+.container .card .imgContainer
+{
+    position: relative;
+    width:250px;
+    height:250px;
+    top:-50px;
+    left:10px;
+    z-index: 1;
+    color: #fff;
+    background-color: rgb(86, 83, 83);
+    border-radius:  4px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.container .card .imgContainer img
+{
+    max-width: 100%;
+    border-radius: 4px;
+}
+.container .card .content
+{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color:#fff;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+}
+.container .card:hover .content
+{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+.container .card:hover .languageRepartition
+{
+    display: flex;
+    transition-delay: 0.3s;
+}
+
+@media (max-width: 330px){
+    .container .card .imgContainer{
+        left: -2px;
+    }
 }
