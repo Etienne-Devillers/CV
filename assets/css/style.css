@@ -702,7 +702,6 @@ body {
     color: #fff;
     visibility: hidden;
     opacity: 0;
-    pointer-events: none;
     transition: 0.3s ease-in-out;
 }
 
@@ -731,6 +730,7 @@ body {
     background-color: #238636;
     border: solid 0px;
     border-radius: 5px;
+    color: white;
 }
 
 /* -------------------Rubrique contact ---------------- */
