@@ -33,7 +33,7 @@ body {
 }
 
 .scrollingMouse {
-display: block;
+    display: block;
     width: 40px;
     height: 70px;
     border: solid 2px #fff;
@@ -43,11 +43,13 @@ display: block;
     margin-top: 2em;
     margin: 0 auto;
 }
+
 @media (max-width: 800px) {
-    .scrollingMouse{
+    .scrollingMouse {
         display: none;
     }
 }
+
 .scrollingMouse:after {
     position: absolute;
     height: 20px;
@@ -213,7 +215,7 @@ display: block;
 
     .title {
         font-size: 1.5em;
-        padding-top:3em;
+        padding-top: 3em;
     }
 
     .titleJob {
@@ -308,7 +310,7 @@ display: block;
 }
 
 @media (max-width: 700px) {
-    .profilContent{
+    .profilContent {
         font-size: 15px;
     }
 }
@@ -432,7 +434,8 @@ display: block;
     font-style: italic;
     color: white;
 }
-.citationTolkien{
+
+.citationTolkien {
     font-style: italic;
 }
 
@@ -452,7 +455,8 @@ display: block;
     bottom: 10%;
 
 }
-.schoolName{
+
+.schoolName {
     font-size: 18px;
     font-style: italic;
 }
@@ -579,186 +583,154 @@ display: block;
 
 /* ----------------Portfolio */
 
-.portfolioItem {
-    width: 85%;
-    height: 25vh;
-    border: solid 1px black;
-    margin-top: 1em;
-    margin: 0.5em auto;
-    position: relative;
-    border-radius: 10px;
-    background-color: rgb(61, 58, 58);
-    color: white;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-
+.languageBar {
+    width: 95%;
+    height: 7px;
+    margin: auto;
+    border-radius: 5px;
+    margin: 5px auto;
+    background-color: blue;
+    display: flex;
+    overflow: hidden;
 }
 
-.portfolioContent {
-    opacity: 0;
-    margin: 7px 7px;
+.languageRepartition {
+    list-style: none;
+    padding: 0;
+    display: none;
+    transition: 0.3s ease-in-out;
+    margin-bottom: 0;
 }
 
-.thumb:hover .portfolioContent {
-    opacity: 1;
+.languagePercent {
+    color: rgb(205, 200, 200);
 }
-.thumb:hover {
-    background-color: #424141;
-    background-image: none;
-}
-.thumb{
-    width: 100%;
-    height: 70%;
-    background-size: cover;
-    background-repeat: no-repeat;
+
+.dot {
+    width: 10px;
+    height: 10px;
     border-radius: 5px;
 }
-/* ------------------Portfolio 1 */
-.thumbnail {
-    background-image: url(../img/bf2042.png);
+
+.htmlColor {
+    background-color: #e34c26;
+}
+.jsColor{
+    background-color: #f1e05a;
 }
 
-.usedTechno {
-    width: 100%;
-    height: 20px;
-    position: absolute;
-    bottom: 0;
+.cssColor {
+    background-color: #563d7c;
 }
 
-.htmlTechno {
+.phpColor {
+    background-color: #4F5D95;
+}
+
+.html1 {
     width: 37.4%;
-    height: 100;
-    background-color: #E34C26;
-    border-radius: 0 0 0 8px;
-
 }
 
-.cssTechno {
+.css1 {
     width: 62.6%;
-    background-color: #563D7C;
-    border-radius: 0 0 8px 0;
-
 }
 
-/* ------------portfolio2---------- */
-
-
-
-.thumbnail2 {
-    background-image: url(../img/Shifumi.png);
+.html2 {
+    width: 65.7%;
 }
 
-.usedTechno2 {
-    width: 100%;
-    height: 20px;
-    position: absolute;
-    bottom: 0;
+.css2 {
+    width: 34.3%;
 }
 
-.jsTechno2 {
-    width: 75%;
-    height: 100;
-    background-color:#F1E05A;
-    border-radius: 0 0 0 8px;
-
+.php3 {
+    width: 84.8%;
 }
 
-.htmlTechno2 {
-    width: 10%;
-    height: 100;
-    background-color: #E34C26;
-    
-
+.css3 {
+    width: 15.2%;
 }
 
-.cssTechno2 {
-    width: 15%;
-    background-color: #563D7C;
-    border-radius: 0 0 8px 0;
+.js4{
+    width: 42.6%;
+}
 
+.css4{
+    width: 35.7%;
+}
+
+.html4{
+    width: 21.7%;
+}
+.container .card {
+    background-color: rgb(61, 58, 58);
+    max-width: 300px;
+    height: 215px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.container .card:hover {
+    height: 400px;
+}
+
+.container .card .imgContainer {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    top: -50px;
+    left: 10px;
+    z-index: 1;
+    color: #fff;
+    background-color: rgb(86, 83, 83);
+    border-radius: 4px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container .card .imgContainer img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.container .card .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+}
+
+.container .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+.container .card:hover .languageRepartition {
+    display: flex;
+    flex-wrap: wrap;
+    transition-delay: 0.3s;
+}
+
+@media (max-width: 330px) {
+    .container .card .imgContainer {
+        left: -2px;
+    }
 }
 
 
-
-
-.thumbnail3{
-    background-image: url(../img/MaisonsVoyage.jpg);
-    
-}
-
-.htmlTechno3 {
-    width: 40%;
-    height: 100;
-    background-color: #E34C26;
-    border-radius: 0 0 0 8px;
-
-}
-
-.cssTechno3 {
-    width: 60%;
-    background-color: #563D7C;
-    border-radius: 0 0 8px 0;
-}
-
-
-.thumbnail4{
-    background-image: url(../img/Calendrier.jpg);
-}
-
-.phpTechno4 {
-    width: 81%;
-    height: 100;
-    background-color: #4F5D95;
-    border-radius: 0 0 0 8px;
-
-}
-
-.cssTechno4 {
-    width: 19%;
-    background-color: #563D7C;
-    border-radius: 0 0 8px 0;
-}
-
-.thumbnail5{
-    background-image: url(../img/Hopital.jpg);
-}
-
-.phpTechno5 {
-    width: 85%;
-    height: 100;
-    background-color: #4F5D95;
-    border-radius: 0 0 0 8px;
-
-}
-
-.cssTechno5 {
-    width: 15%;
-    background-color: #563D7C;
-    border-radius: 0 0 8px 0;
-}
-
-.thumbnail6{
-    background-image: url(../img/colyseum.jpg);
-}
-
-.jsTechno6 {
-    width: 50%;
-    background-color: #F1E05A;
-    border-radius: 0 0 0 8px ;
-
-}
-
-.phpTechno6 {
-    width: 34%;
-    height: 100;
-    background-color: #4F5D95;
-    
-
-}
-
-.cssTechno6 {
-    width: 16%;
-    background-color: #563D7C;
-    border-radius: 0 0 8px 0;
+.btnPortfolio{
+    padding: 5px 10px;
+    background-color: #238636;
+    border: solid 0px;
+    border-radius: 5px;
 }
 
 /* -------------------Rubrique contact ---------------- */
@@ -891,126 +863,3 @@ footer {
 
 
 
-.languageBar{
-    width: 95%;
-    height: 7px;
-    margin: auto;
-    border-radius: 5px;
-    margin: 5px auto;
-    background-color: blue;
-    display: flex;
-    overflow: hidden;
-}
-.languageRepartition{
-    list-style: none;
-    padding: 0;
-    display: none;
-    transition: 0.3s ease-in-out;
-    margin-bottom: 0;
-}
-
-.languagePercent{
-    color: rgb(205, 200, 200);
-}
-.dot{
-    width: 10px;
-    height: 10px;    
-    border-radius: 5px;
-}
-
-.htmlColor{
-    background-color: #e34c26;
-}
-
-.cssColor{
-    background-color: #563d7c;
-}
-.phpColor{
-    background-color: #4F5D95;
-    }
-
-.html1{
-    width: 37.4%;
-}
-
-.css1{
-    width: 62.6%;
-}
-
-.html2{
-    width: 65.7%;
-}
-.css2{
-    width: 34.3%;
-}
-
-.php3{
-    width: 84.8%;
-}
-
-.css3{
-    width:15.2%;
-}  
-
-.container .card
-{
-    background-color: rgb(61, 58, 58);
-    max-width: 300px;
-    height: 215px;
-    margin: 30px 10px;
-    padding: 20px 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
-    transition: 0.3s ease-in-out;
-}
-.container .card:hover
-{
-    height: 400px;
-}
-.container .card .imgContainer
-{
-    position: relative;
-    width:250px;
-    height:250px;
-    top:-50px;
-    left:10px;
-    z-index: 1;
-    color: #fff;
-    background-color: rgb(86, 83, 83);
-    border-radius:  4px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-}
-.container .card .imgContainer img
-{
-    max-width: 100%;
-    border-radius: 4px;
-}
-.container .card .content
-{
-    position: relative;
-    margin-top: -140px;
-    padding: 10px 15px;
-    text-align: center;
-    color:#fff;
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-    transition: 0.3s ease-in-out;
-}
-.container .card:hover .content
-{
-    visibility: visible;
-    opacity: 1;
-    margin-top: -40px;
-    transition-delay: 0.3s;
-}
-.container .card:hover .languageRepartition
-{
-    display: flex;
-    transition-delay: 0.3s;
-}
-
-@media (max-width: 330px){
-    .container .card .imgContainer{
-        left: -2px;
-    }
-}
